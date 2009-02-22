@@ -1,0 +1,1036 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* PaidItAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 462}}";
+			sepNavSelRange = "{487, 0}";
+			sepNavVisRange = "{0, 588}";
+			sepNavWindowFrame = "{{15, 87}, {872, 786}}";
+		};
+	};
+	1D3623250D0F684500981E51 /* PaidItAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 1072}}";
+			sepNavSelRange = "{1419, 0}";
+			sepNavVisRange = "{1119, 494}";
+			sepNavWindowFrame = "{{38, 66}, {872, 786}}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* PaidIt */ = {
+		activeExec = 0;
+		executables = (
+			5BBA55D80F3B7E9E00CF98E0 /* PaidIt */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5BBA55D80F3B7E9E00CF98E0 /* PaidIt */;
+		activeSDKPreference = iphonesimulator2.2.1;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* PaidIt */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* PaidIt */,
+		);
+		breakpoints = (
+			5BBA55FA0F3B886800CF98E0 /* Event.m:9 */,
+			5BBA55FC0F3B886900CF98E0 /* Event.m:6 */,
+			5BC37D650F4973FB003D08DC /* Event.m:31 */,
+			5BC37D670F497405003D08DC /* Event.m:33 */,
+			5B100A630F4DF53B003318B7 /* PaidItAppDelegate.m:56 */,
+			5B100A7E0F4DF5B9003318B7 /* AddEventsViewController.m:30 */,
+			5B100A890F4DF650003318B7 /* AddEventsViewController.m:31 */,
+			5B100A8B0F4DF671003318B7 /* EventsViewController.m:46 */,
+			5B100A8D0F4DF671003318B7 /* EventsViewController.m:47 */,
+			5B100B560F4E06E6003318B7 /* AddEventsViewController.m:41 */,
+			5B100B650F4E0792003318B7 /* AddEventsViewController.m:45 */,
+			5B100BBA0F4E0B30003318B7 /* AddEventsViewController.m:36 */,
+			5B100BCC0F4E0C61003318B7 /* EventsViewController.m:16 */,
+			5B100BF10F4E0D8C003318B7 /* EventsViewController.m:20 */,
+			5BE7D9200F50A01F00C576C8 /* Event.m:19 */,
+			5BE7D9220F50A02100C576C8 /* Event.m:24 */,
+		);
+		codeSenseManager = 5BBA55DF0F3B7EB400CF98E0 /* Code sense */;
+		executables = (
+			5BBA55D80F3B7E9E00CF98E0 /* PaidIt */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					493,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					625,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 256990371;
+			PBXWorkspaceStateSaveDate = 256990371;
+		};
+		perUserProjectItems = {
+			5B10ADED0F49B6D300301DA8 /* PBXTextBookmark */ = 5B10ADED0F49B6D300301DA8 /* PBXTextBookmark */;
+			5B10AE290F49BCA800301DA8 /* PBXTextBookmark */ = 5B10AE290F49BCA800301DA8 /* PBXTextBookmark */;
+			5B10AE2E0F49BCA800301DA8 /* PBXTextBookmark */ = 5B10AE2E0F49BCA800301DA8 /* PBXTextBookmark */;
+			5B10AE510F49BD0100301DA8 /* PBXTextBookmark */ = 5B10AE510F49BD0100301DA8 /* PBXTextBookmark */;
+			5B1DA94C0F3D8EAD00F35DD3 /* PBXTextBookmark */ = 5B1DA94C0F3D8EAD00F35DD3 /* PBXTextBookmark */;
+			5B54CEEC0F515D36005DE215 /* PBXTextBookmark */ = 5B54CEEC0F515D36005DE215 /* PBXTextBookmark */;
+			5B54CEED0F515D36005DE215 /* PBXTextBookmark */ = 5B54CEED0F515D36005DE215 /* PBXTextBookmark */;
+			5B54CEEE0F515D36005DE215 /* PBXTextBookmark */ = 5B54CEEE0F515D36005DE215 /* PBXTextBookmark */;
+			5B54CEEF0F515D36005DE215 /* PBXTextBookmark */ = 5B54CEEF0F515D36005DE215 /* PBXTextBookmark */;
+			5B54CEF00F515D36005DE215 /* PBXTextBookmark */ = 5B54CEF00F515D36005DE215 /* PBXTextBookmark */;
+			5B54CEF10F515D36005DE215 /* PBXTextBookmark */ = 5B54CEF10F515D36005DE215 /* PBXTextBookmark */;
+			5B54CEF20F515D36005DE215 /* PBXTextBookmark */ = 5B54CEF20F515D36005DE215 /* PBXTextBookmark */;
+			5BB5EBEE0F4C5F5C001CCDCB /* PBXTextBookmark */ = 5BB5EBEE0F4C5F5C001CCDCB /* PBXTextBookmark */;
+			5BB5EBEF0F4C5F5C001CCDCB /* PBXTextBookmark */ = 5BB5EBEF0F4C5F5C001CCDCB /* PBXTextBookmark */;
+			5BB5EBF00F4C5F5C001CCDCB /* PBXTextBookmark */ = 5BB5EBF00F4C5F5C001CCDCB /* PBXTextBookmark */;
+			5BB5EBF20F4C5F5C001CCDCB /* PBXTextBookmark */ = 5BB5EBF20F4C5F5C001CCDCB /* PBXTextBookmark */;
+			5BB5EBF90F4C5F5C001CCDCB /* PBXTextBookmark */ = 5BB5EBF90F4C5F5C001CCDCB /* PBXTextBookmark */;
+			5BB5EBFA0F4C5F5C001CCDCB /* PBXTextBookmark */ = 5BB5EBFA0F4C5F5C001CCDCB /* PBXTextBookmark */;
+			5BB5EC070F4C5F5C001CCDCB /* PBXTextBookmark */ = 5BB5EC070F4C5F5C001CCDCB /* PBXTextBookmark */;
+			5BBA560D0F3B8D8900CF98E0 /* PBXTextBookmark */ = 5BBA560D0F3B8D8900CF98E0 /* PBXTextBookmark */;
+			5BBA560E0F3B8D8900CF98E0 /* PBXTextBookmark */ = 5BBA560E0F3B8D8900CF98E0 /* PBXTextBookmark */;
+			5BC37DA30F497B4C003D08DC /* PBXTextBookmark */ = 5BC37DA30F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37DB00F497B4C003D08DC /* PBXTextBookmark */ = 5BC37DB00F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37DB40F497B4C003D08DC /* PBXTextBookmark */ = 5BC37DB40F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37DBB0F497B4C003D08DC /* PBXTextBookmark */ = 5BC37DBB0F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37DD30F497B4C003D08DC /* PBXTextBookmark */ = 5BC37DD30F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37DD40F497B4C003D08DC /* PBXTextBookmark */ = 5BC37DD40F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37E0C0F497B4C003D08DC /* PBXTextBookmark */ = 5BC37E0C0F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37E200F497B4C003D08DC /* PBXTextBookmark */ = 5BC37E200F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37E210F497B4C003D08DC /* PBXTextBookmark */ = 5BC37E210F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37E220F497B4C003D08DC /* PBXTextBookmark */ = 5BC37E220F497B4C003D08DC /* PBXTextBookmark */;
+			5BC37E490F49827B003D08DC /* PBXTextBookmark */ = 5BC37E490F49827B003D08DC /* PBXTextBookmark */;
+			5BC37E9D0F4987A1003D08DC /* PBXTextBookmark */ = 5BC37E9D0F4987A1003D08DC /* PBXTextBookmark */;
+			5BC37F2C0F4995D9003D08DC /* PBXTextBookmark */ = 5BC37F2C0F4995D9003D08DC /* PBXTextBookmark */;
+			5BC37F6B0F499B06003D08DC /* PBXTextBookmark */ = 5BC37F6B0F499B06003D08DC /* PBXTextBookmark */;
+			5BE7D8FA0F509FB700C576C8 /* PBXTextBookmark */ = 5BE7D8FA0F509FB700C576C8 /* PBXTextBookmark */;
+			5BE7D9360F50A16400C576C8 /* PBXTextBookmark */ = 5BE7D9360F50A16400C576C8 /* PBXTextBookmark */;
+			5BE7D9630F50A63F00C576C8 /* PBXTextBookmark */ = 5BE7D9630F50A63F00C576C8 /* PBXTextBookmark */;
+			5BE7D98D0F50AC6C00C576C8 /* PBXTextBookmark */ = 5BE7D98D0F50AC6C00C576C8 /* PBXTextBookmark */;
+			5BE7D98E0F50AC6C00C576C8 /* PBXTextBookmark */ = 5BE7D98E0F50AC6C00C576C8 /* PBXTextBookmark */;
+			5BE7D98F0F50AC6C00C576C8 /* PBXTextBookmark */ = 5BE7D98F0F50AC6C00C576C8 /* PBXTextBookmark */;
+			5BE7D9900F50AC6C00C576C8 /* PBXTextBookmark */ = 5BE7D9900F50AC6C00C576C8 /* PBXTextBookmark */;
+			5BE7D9910F50AC6C00C576C8 /* PBXTextBookmark */ = 5BE7D9910F50AC6C00C576C8 /* PBXTextBookmark */;
+			5BE7D9980F50AC6C00C576C8 /* PBXTextBookmark */ = 5BE7D9980F50AC6C00C576C8 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5BBA55DE0F3B7EB400CF98E0 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 431}}";
+			sepNavSelRange = "{265, 0}";
+			sepNavVisRange = "{0, 365}";
+			sepNavWindowFrame = "{{84, 24}, {872, 786}}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* PaidIt_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 431}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 181}";
+		};
+	};
+	5B100A630F4DF53B003318B7 /* PaidItAppDelegate.m:56 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* PaidItAppDelegate.m */;
+		functionName = "-addNewEventNamed:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 56;
+		location = PaidIt;
+		modificationTime = 256942731.082429;
+		state = 1;
+	};
+	5B100A7E0F4DF5B9003318B7 /* AddEventsViewController.m:30 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */;
+		functionName = "-save:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 30;
+		location = PaidIt;
+		modificationTime = 256942731.082433;
+		state = 1;
+	};
+	5B100A890F4DF650003318B7 /* AddEventsViewController.m:31 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */;
+		functionName = "-save:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 31;
+		location = PaidIt;
+		modificationTime = 256942731.082441;
+		state = 1;
+	};
+	5B100A8B0F4DF671003318B7 /* EventsViewController.m:46 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BC37D900F49793B003D08DC /* EventsViewController.m */;
+		functionName = "-addNewEventNamed:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 46;
+		location = PaidIt;
+		modificationTime = 256942731.08245;
+		state = 1;
+	};
+	5B100A8D0F4DF671003318B7 /* EventsViewController.m:47 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BC37D900F49793B003D08DC /* EventsViewController.m */;
+		functionName = "-addNewEventNamed:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 47;
+		location = PaidIt;
+		modificationTime = 256942731.082459;
+		state = 1;
+	};
+	5B100B560F4E06E6003318B7 /* AddEventsViewController.m:41 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */;
+		functionName = "-textFieldDidEndEditing:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 41;
+		location = PaidIt;
+		modificationTime = 256942731.082469;
+		state = 1;
+	};
+	5B100B650F4E0792003318B7 /* AddEventsViewController.m:45 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */;
+		functionName = "-textFieldShouldReturn:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 45;
+		location = PaidIt;
+		modificationTime = 256942731.082478;
+		state = 1;
+	};
+	5B100BBA0F4E0B30003318B7 /* AddEventsViewController.m:36 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */;
+		functionName = "-cancel:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 36;
+		location = PaidIt;
+		modificationTime = 256942837.721685;
+		state = 1;
+	};
+	5B100BCC0F4E0C61003318B7 /* EventsViewController.m:16 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BC37D900F49793B003D08DC /* EventsViewController.m */;
+		functionName = "-tableView:numberOfRowsInSection:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 16;
+		location = PaidIt;
+		modificationTime = 256942731.082493;
+		state = 2;
+	};
+	5B100BF10F4E0D8C003318B7 /* EventsViewController.m:20 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BC37D900F49793B003D08DC /* EventsViewController.m */;
+		functionName = "-tableView:cellForRowAtIndexPath:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 20;
+		location = PaidIt;
+		modificationTime = 256942731.082501;
+		state = 2;
+	};
+	5B10ADED0F49B6D300301DA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D490F496D92003D08DC /* PaymentType.m */;
+		name = "PaymentType.m: 21";
+		rLen = 49;
+		rLoc = 334;
+		rType = 0;
+		vrLen = 633;
+		vrLoc = 0;
+	};
+	5B10AE290F49BCA800301DA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D480F496D92003D08DC /* PaymentType.h */;
+		name = "PaymentType.h: 18";
+		rLen = 0;
+		rLoc = 356;
+		rType = 0;
+		vrLen = 364;
+		vrLoc = 0;
+	};
+	5B10AE2E0F49BCA800301DA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D420F496ACA003D08DC /* Person.m */;
+		name = "Person.m: 16";
+		rLen = 0;
+		rLoc = 238;
+		rType = 0;
+		vrLen = 448;
+		vrLoc = 27;
+	};
+	5B10AE510F49BD0100301DA8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B1DA9320F3D8EA400F35DD3 /* Payment.h */;
+		name = "Payment.h: 25";
+		rLen = 0;
+		rLoc = 549;
+		rType = 0;
+		vrLen = 562;
+		vrLoc = 0;
+	};
+	5B1DA9320F3D8EA400F35DD3 /* Payment.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 455}}";
+			sepNavSelRange = "{549, 0}";
+			sepNavVisRange = "{0, 562}";
+			sepNavWindowFrame = "{{38, 66}, {872, 786}}";
+		};
+	};
+	5B1DA9330F3D8EA400F35DD3 /* Payment.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 616}}";
+			sepNavSelRange = "{649, 0}";
+			sepNavVisRange = "{160, 636}";
+		};
+	};
+	5B1DA94C0F3D8EAD00F35DD3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B1DA9320F3D8EA400F35DD3 /* Payment.h */;
+		name = "Payment.h: 13";
+		rLen = 0;
+		rLoc = 333;
+		rType = 0;
+		vrLen = 217;
+		vrLoc = 0;
+	};
+	5B54CEEC0F515D36005DE215 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37F1C0F49940B003D08DC /* PaymentsViewController.m */;
+		name = "PaymentsViewController.m: 21";
+		rLen = 0;
+		rLoc = 507;
+		rType = 0;
+		vrLen = 617;
+		vrLoc = 153;
+	};
+	5B54CEED0F515D36005DE215 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* PaidItAppDelegate.h */;
+		name = "PaidItAppDelegate.h: 18";
+		rLen = 0;
+		rLoc = 487;
+		rType = 0;
+		vrLen = 588;
+		vrLoc = 0;
+	};
+	5B54CEEE0F515D36005DE215 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* PaidItAppDelegate.m */;
+		name = "PaidItAppDelegate.m: 56";
+		rLen = 0;
+		rLoc = 1419;
+		rType = 0;
+		vrLen = 490;
+		vrLoc = 1123;
+	};
+	5B54CEEF0F515D36005DE215 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37F1C0F49940B003D08DC /* PaymentsViewController.m */;
+		name = "PaymentsViewController.m: 21";
+		rLen = 0;
+		rLoc = 507;
+		rType = 0;
+		vrLen = 617;
+		vrLoc = 153;
+	};
+	5B54CEF00F515D36005DE215 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* PaidItAppDelegate.h */;
+		name = "PaidItAppDelegate.h: 18";
+		rLen = 0;
+		rLoc = 487;
+		rType = 0;
+		vrLen = 588;
+		vrLoc = 0;
+	};
+	5B54CEF10F515D36005DE215 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* PaidItAppDelegate.m */;
+		name = "PaidItAppDelegate.m: 56";
+		rLen = 0;
+		rLoc = 1419;
+		rType = 0;
+		vrLen = 490;
+		vrLoc = 1123;
+	};
+	5B54CEF20F515D36005DE215 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D900F49793B003D08DC /* EventsViewController.m */;
+		name = "EventsViewController.m: 70";
+		rLen = 0;
+		rLoc = 2012;
+		rType = 0;
+		vrLen = 593;
+		vrLoc = 1687;
+	};
+	5BB5EBC10F4C550C001CCDCB /* AddEventsViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 350}}";
+			sepNavSelRange = "{0, 489}";
+			sepNavVisRange = "{0, 484}";
+			sepNavWindowFrame = "{{15, 87}, {872, 786}}";
+		};
+	};
+	5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 1218}}";
+			sepNavSelRange = "{1659, 0}";
+			sepNavVisRange = "{0, 588}";
+			sepNavWindowFrame = "{{15, 87}, {872, 786}}";
+		};
+	};
+	5BB5EBEE0F4C5F5C001CCDCB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B1DA9330F3D8EA400F35DD3 /* Payment.m */;
+		name = "Payment.m: 29";
+		rLen = 0;
+		rLoc = 649;
+		rType = 0;
+		vrLen = 636;
+		vrLoc = 160;
+	};
+	5BB5EBEF0F4C5F5C001CCDCB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D410F496ACA003D08DC /* Person.h */;
+		name = "Person.h: 17";
+		rLen = 0;
+		rLoc = 269;
+		rType = 0;
+		vrLen = 275;
+		vrLoc = 0;
+	};
+	5BB5EBF00F4C5F5C001CCDCB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* PaidIt_Prefix.pch */;
+		name = "PaidIt_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 181;
+		vrLoc = 0;
+	};
+	5BB5EBF20F4C5F5C001CCDCB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 13";
+		rLen = 0;
+		rLoc = 265;
+		rType = 0;
+		vrLen = 365;
+		vrLoc = 0;
+	};
+	5BB5EBF90F4C5F5C001CCDCB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BB5EBC10F4C550C001CCDCB /* AddEventsViewController.h */;
+		name = "AddEventsViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 246;
+		vrLoc = 0;
+	};
+	5BB5EBFA0F4C5F5C001CCDCB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */;
+		name = "AddEventsViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 773;
+		vrLoc = 0;
+	};
+	5BB5EC070F4C5F5C001CCDCB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* PaidIt_Prefix.pch */;
+		name = "PaidIt_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 181;
+		vrLoc = 0;
+	};
+	5BBA55D80F3B7E9E00CF98E0 /* PaidIt */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = PaidIt;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	5BBA55DE0F3B7EB400CF98E0 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	5BBA55DF0F3B7EB400CF98E0 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	5BBA55F20F3B852D00CF98E0 /* Event.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 504}}";
+			sepNavSelRange = "{721, 0}";
+			sepNavVisRange = "{15, 763}";
+			sepNavWindowFrame = "{{15, 87}, {872, 786}}";
+		};
+	};
+	5BBA55F30F3B852D00CF98E0 /* Event.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 1622}}";
+			sepNavSelRange = "{310, 0}";
+			sepNavVisRange = "{29, 715}";
+			sepNavWindowFrame = "{{38, 66}, {872, 786}}";
+		};
+	};
+	5BBA55FA0F3B886800CF98E0 /* Event.m:9 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BBA55F30F3B852D00CF98E0 /* Event.m */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 9;
+		location = PaidIt;
+		modificationTime = 256942731.082396;
+		state = 2;
+	};
+	5BBA55FC0F3B886900CF98E0 /* Event.m:6 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BBA55F30F3B852D00CF98E0 /* Event.m */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 6;
+		modificationTime = 256942731.08241;
+		state = 2;
+	};
+	5BBA560D0F3B8D8900CF98E0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BBA55F20F3B852D00CF98E0 /* Event.h */;
+		name = "Event.h: 19";
+		rLen = 297;
+		rLoc = 391;
+		rType = 0;
+		vrLen = 394;
+		vrLoc = 74;
+	};
+	5BBA560E0F3B8D8900CF98E0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BBA55F30F3B852D00CF98E0 /* Event.m */;
+		name = "Event.m: 14";
+		rLen = 0;
+		rLoc = 236;
+		rType = 0;
+		vrLen = 217;
+		vrLoc = 0;
+	};
+	5BC37D410F496ACA003D08DC /* Person.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 431}}";
+			sepNavSelRange = "{269, 0}";
+			sepNavVisRange = "{0, 275}";
+		};
+	};
+	5BC37D420F496ACA003D08DC /* Person.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 574}}";
+			sepNavSelRange = "{238, 0}";
+			sepNavVisRange = "{27, 448}";
+		};
+	};
+	5BC37D480F496D92003D08DC /* PaymentType.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 455}}";
+			sepNavSelRange = "{356, 0}";
+			sepNavVisRange = "{0, 364}";
+		};
+	};
+	5BC37D490F496D92003D08DC /* PaymentType.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {825, 630}}";
+			sepNavSelRange = "{334, 49}";
+			sepNavVisRange = "{0, 633}";
+		};
+	};
+	5BC37D650F4973FB003D08DC /* Event.m:31 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BBA55F30F3B852D00CF98E0 /* Event.m */;
+		functionName = "-init";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 31;
+		location = PaidIt;
+		modificationTime = 256942731.082415;
+		state = 2;
+	};
+	5BC37D670F497405003D08DC /* Event.m:33 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BBA55F30F3B852D00CF98E0 /* Event.m */;
+		functionName = "-init";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 33;
+		location = PaidIt;
+		modificationTime = 256942731.082423;
+		state = 2;
+	};
+	5BC37D8F0F49793B003D08DC /* EventsViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 336}}";
+			sepNavSelRange = "{470, 79}";
+			sepNavVisRange = "{0, 555}";
+			sepNavWindowFrame = "{{61, 45}, {872, 786}}";
+		};
+	};
+	5BC37D900F49793B003D08DC /* EventsViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 1454}}";
+			sepNavSelRange = "{2012, 0}";
+			sepNavVisRange = "{1720, 642}";
+			sepNavWindowFrame = "{{61, 45}, {872, 786}}";
+		};
+	};
+	5BC37DA30F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37DA40F497B4C003D08DC /* NSDecimalNumber.h */;
+		name = "NSDecimalNumber.h: 35";
+		rLen = 40;
+		rLoc = 1113;
+		rType = 0;
+		vrLen = 1082;
+		vrLoc = 1112;
+	};
+	5BC37DA40F497B4C003D08DC /* NSDecimalNumber.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSDecimalNumber.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator2.2.1.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSDecimalNumber.h;
+		sourceTree = "<absolute>";
+	};
+	5BC37DB00F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5B1DA9330F3D8EA400F35DD3 /* Payment.m */;
+		name = "Payment.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 191;
+		vrLoc = 0;
+	};
+	5BC37DB40F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D410F496ACA003D08DC /* Person.h */;
+		name = "Person.h: 13";
+		rLen = 0;
+		rLoc = 206;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	5BC37DBB0F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D420F496ACA003D08DC /* Person.m */;
+		name = "Person.m: 13";
+		rLen = 0;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 206;
+		vrLoc = 0;
+	};
+	5BC37DD30F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D480F496D92003D08DC /* PaymentType.h */;
+		name = "PaymentType.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 224;
+		vrLoc = 0;
+	};
+	5BC37DD40F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D490F496D92003D08DC /* PaymentType.m */;
+		name = "PaymentType.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 203;
+		vrLoc = 0;
+	};
+	5BC37E0C0F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37E0D0F497B4C003D08DC /* NSDecimalNumber.h */;
+		name = "NSDecimalNumber.h: 35";
+		rLen = 40;
+		rLoc = 1113;
+		rType = 0;
+		vrLen = 1082;
+		vrLoc = 1112;
+	};
+	5BC37E0D0F497B4C003D08DC /* NSDecimalNumber.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSDecimalNumber.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator2.2.1.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSDecimalNumber.h;
+		sourceTree = "<absolute>";
+	};
+	5BC37E200F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* PaidItAppDelegate.m */;
+		name = "PaidItAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 482;
+		vrLoc = 0;
+	};
+	5BC37E210F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D8F0F49793B003D08DC /* EventsViewController.h */;
+		name = "EventsViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 240;
+		vrLoc = 0;
+	};
+	5BC37E220F497B4C003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D900F49793B003D08DC /* EventsViewController.m */;
+		name = "EventsViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 670;
+		vrLoc = 0;
+	};
+	5BC37E490F49827B003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* PaidItAppDelegate.h */;
+		name = "PaidItAppDelegate.h: 17";
+		rLen = 0;
+		rLoc = 367;
+		rType = 0;
+		vrLen = 448;
+		vrLoc = 0;
+	};
+	5BC37E9D0F4987A1003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 14";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 365;
+		vrLoc = 0;
+	};
+	5BC37F1B0F49940B003D08DC /* PaymentsViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 322}}";
+			sepNavSelRange = "{376, 0}";
+			sepNavVisRange = "{0, 424}";
+			sepNavWindowFrame = "{{107, 3}, {872, 786}}";
+		};
+	};
+	5BC37F1C0F49940B003D08DC /* PaymentsViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 1370}}";
+			sepNavSelRange = "{507, 0}";
+			sepNavVisRange = "{153, 604}";
+			sepNavWindowFrame = "{{15, 87}, {872, 786}}";
+		};
+	};
+	5BC37F2C0F4995D9003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37F1B0F49940B003D08DC /* PaymentsViewController.h */;
+		name = "PaymentsViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 244;
+		vrLoc = 0;
+	};
+	5BC37F6B0F499B06003D08DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37F1C0F49940B003D08DC /* PaymentsViewController.m */;
+		name = "PaymentsViewController.m: 30";
+		rLen = 0;
+		rLoc = 1224;
+		rType = 0;
+		vrLen = 825;
+		vrLoc = 191;
+	};
+	5BE7D8FA0F509FB700C576C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BBA55F20F3B852D00CF98E0 /* Event.h */;
+		name = "Event.h: 31";
+		rLen = 0;
+		rLoc = 721;
+		rType = 0;
+		vrLen = 763;
+		vrLoc = 15;
+	};
+	5BE7D9200F50A01F00C576C8 /* Event.m:19 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BBA55F30F3B852D00CF98E0 /* Event.m */;
+		functionName = "+initWithName:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 19;
+		location = PaidIt;
+		modificationTime = 256942731.082506;
+		state = 2;
+	};
+	5BE7D9220F50A02100C576C8 /* Event.m:24 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5BBA55F30F3B852D00CF98E0 /* Event.m */;
+		functionName = "-init";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 24;
+		location = PaidIt;
+		modificationTime = 256942731.082516;
+		state = 2;
+	};
+	5BE7D9360F50A16400C576C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BBA55F30F3B852D00CF98E0 /* Event.m */;
+		name = "Event.m: 19";
+		rLen = 0;
+		rLoc = 310;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 29;
+	};
+	5BE7D9630F50A63F00C576C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D900F49793B003D08DC /* EventsViewController.m */;
+		name = "EventsViewController.m: 70";
+		rLen = 216;
+		rLoc = 2008;
+		rType = 0;
+		vrLen = 560;
+		vrLoc = 1720;
+	};
+	5BE7D9840F50A94E00C576C8 /* PaymentDetailController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 336}}";
+			sepNavSelRange = "{466, 0}";
+			sepNavVisRange = "{0, 478}";
+		};
+	};
+	5BE7D98D0F50AC6C00C576C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BB5EBC10F4C550C001CCDCB /* AddEventsViewController.h */;
+		name = "AddEventsViewController.h: 1";
+		rLen = 489;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 484;
+		vrLoc = 0;
+	};
+	5BE7D98E0F50AC6C00C576C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37D8F0F49793B003D08DC /* EventsViewController.h */;
+		name = "EventsViewController.h: 20";
+		rLen = 79;
+		rLoc = 470;
+		rType = 0;
+		vrLen = 555;
+		vrLoc = 0;
+	};
+	5BE7D98F0F50AC6C00C576C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BE7D9840F50A94E00C576C8 /* PaymentDetailController.h */;
+		name = "PaymentDetailController.h: 19";
+		rLen = 0;
+		rLoc = 466;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	5BE7D9900F50AC6C00C576C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */;
+		name = "AddEventsViewController.m: 69";
+		rLen = 0;
+		rLoc = 1659;
+		rType = 0;
+		vrLen = 588;
+		vrLoc = 0;
+	};
+	5BE7D9910F50AC6C00C576C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BC37F1B0F49940B003D08DC /* PaymentsViewController.h */;
+		name = "PaymentsViewController.h: 17";
+		rLen = 0;
+		rLoc = 376;
+		rType = 0;
+		vrLen = 424;
+		vrLoc = 0;
+	};
+	5BE7D9980F50AC6C00C576C8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5BE7D9840F50A94E00C576C8 /* PaymentDetailController.h */;
+		name = "PaymentDetailController.h: 19";
+		rLen = 0;
+		rLoc = 356;
+		rType = 0;
+		vrLen = 407;
+		vrLoc = 0;
+	};
+}
