@@ -15,12 +15,14 @@
 	PaymentType* paymentType;
 	NSDecimalNumber* amount;
 	NSDate *date;
+	NSString *currency;
 }
 
 @property (readwrite, assign) Person* person;
 @property (readwrite, assign) PaymentType* paymentType;
 @property (readwrite, copy) NSDecimalNumber* amount;
-@property (readwrite, assign) NSDate* date;
+@property (readwrite, copy) NSDate* date;
+@property (readwrite, copy) NSString* currency;
 
 - (NSString*)desc;
 

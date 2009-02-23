@@ -7,6 +7,7 @@
 //
 
 #import "PaymentsViewController.h"
+#import "Payment.h"
 
 
 @implementation PaymentsViewController
@@ -18,13 +19,40 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"paymentCell"];
+	static NSString *CELL_IDENTIFIER = @"CellIdentPayment";
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CELL_IDENTIFIER];
 	if (nil == cell)
 	{
-		cell = [[[UITableViewCell alloc] initWithFrame: CGRectZero reuseIdentifier: @"paymentCell"] autorelease];
+		cell = paymentCell;
 	}
 	
-	cell.text = [[self.payments objectAtIndex:indexPath.row] desc];
+	Payment *payment = [self.payments objectAtIndex:indexPath.row];
+	
+	UILabel *label;
+	
+	label = (UILabel *)[cell.contentView viewWithTag: kLabelDate ];
+	NSDateFormatter *dateFormat = [[[NSDateFormatter alloc] init] autorelease];
+	[dateFormat setDateFormat: @"yyyy-MM-dd"]; // 2009-12-24
+	label.text = [dateFormat stringFromDate: payment.date];
+	
+	label = (UILabel *)[cell.contentView viewWithTag: kLabelName ];
+	label.text = payment.person.name;
+
+	label = (UILabel *)[cell.contentView viewWithTag: kLabelAmount ];
+	NSNumberFormatter *formatter = [[[NSNumberFormatter alloc] init] autorelease];
+	[formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+	[formatter setFormat:@"###.00"];
+	label.text = [NSString stringWithFormat:@"%@", [formatter stringFromNumber: payment.amount]];
+
+	label = (UILabel *)[cell.contentView viewWithTag: kLabelType ];
+	label.text = payment.paymentType.name;
+
+	label = (UILabel *)[cell.contentView viewWithTag: kLabelCurrency ];	
+	label.text = payment.currency;
+	
+	//	cell.text = [[self.payments objectAtIndex:indexPath.row] desc];
+
 	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 
 	return cell;
@@ -38,13 +66,19 @@
 - (void)setPayments:(NSArray *)newPayments {
 	[payments release];
 	payments = [newPayments retain];
-	[tableView reloadData];
+//	[tableView reloadData];
 }
 
 -(IBAction)addPayment:(id)sender {
 	[self presentModalViewController:paymentDetailController animated:TRUE];
 }
 
+// does not need??
+/*
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return 50;
+}
+ */
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.

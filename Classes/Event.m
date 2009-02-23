@@ -82,7 +82,7 @@
 	[gas release];
 	
 	// define initial payments
-	[self addPayment: [[Payment alloc] initWithPerson: peter paymentType: food amount: [NSDecimalNumber decimalNumberWithString: @"1.0"]]];
+	[self addPayment: [[Payment alloc] initWithPerson: peter paymentType: food amount: [NSDecimalNumber decimalNumberWithString: @"11.5"]]];
 	[self addPayment: [[Payment alloc] initWithPerson: peter paymentType: gas amount: [NSDecimalNumber decimalNumberWithString: @"22.0"]]];
 	[self addPayment: [[Payment alloc] initWithPerson: muster paymentType: food amount: [NSDecimalNumber decimalNumberWithString: @"99.0"]]];
 	[self addPayment: [[Payment alloc] initWithPerson: muster paymentType: muster amount: [NSDecimalNumber decimalNumberWithString: @"101.0"]]];

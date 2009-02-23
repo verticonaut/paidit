@@ -10,7 +10,7 @@
 
 
 @implementation Payment
-@synthesize person, paymentType, amount, date;
+@synthesize person, paymentType, amount, date, currency;
 
 - (id)initWithPerson:(Person*) aPerson paymentType:(PaymentType*) aPaymentType amount:(NSDecimalNumber*) anAmount
 {
@@ -20,6 +20,7 @@
 	self.paymentType = aPaymentType;
 	self.amount = anAmount;
 	self.date = [NSDate date];
+	self.currency = @"curr";
 	
 	return self;
 }
@@ -35,6 +36,7 @@
 	[self.paymentType release];
 	[self.amount release];
 	[self.date release];
+	[self.currency release];
 	
 	[super dealloc];
 }

@@ -8,15 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+#define kLabelDate		1
+#define kLabelName		2
+#define kLabelAmount	3
+#define kLabelType		4
+#define kLabelCurrency	5
+
+
 @class PaidItAppDelegate;
 @class PaymentDetailController;
 
 @interface PaymentsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
 	NSArray *payments;
 
+	IBOutlet UITableViewCell *paymentCell;
 	IBOutlet PaidItAppDelegate *appDelegate;
 	IBOutlet PaymentDetailController *paymentDetailController;
-	IBOutlet UITableView *tableView;
 }
 
 @property (nonatomic, retain) NSArray *payments;

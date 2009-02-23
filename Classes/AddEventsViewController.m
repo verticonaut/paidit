@@ -27,9 +27,22 @@
 }
 
 -(IBAction)save:(id)sender {
-	[eventsViewController addNewEventNamed: textField.text];
-	[self dismissModalViewControllerAnimated: TRUE];
-	textField.text = @"";
+	NSString *eventName = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	
+	if ([eventName length] == 0) {
+		UIAlertView *alert = [[UIAlertView alloc]
+			initWithTitle: @"Invalid input"
+			message:@"Event name can not be empty"
+			delegate: self
+			cancelButtonTitle: @"Ok"
+			otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+	} else {
+		[eventsViewController addNewEventNamed: eventName];
+		[self dismissModalViewControllerAnimated: TRUE];
+		textField.text = @"";
+	}
 }
 
 -(IBAction)cancel:(id)sender {
