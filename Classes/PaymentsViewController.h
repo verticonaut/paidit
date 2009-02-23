@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class PaidItAppDelegate;
+@class PaymentDetailController;
 
-@interface PaymentsViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface PaymentsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
 	NSArray *payments;
-	UITableView *tableView;
+
+	IBOutlet PaidItAppDelegate *appDelegate;
+	IBOutlet PaymentDetailController *paymentDetailController;
+	IBOutlet UITableView *tableView;
 }
 
 @property (nonatomic, retain) NSArray *payments;

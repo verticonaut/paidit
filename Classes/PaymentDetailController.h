@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import	"Payment.h"
 
 #define kNumberOfEditableRows	4;
 #define kPersonNameIndex		0;
@@ -14,10 +15,14 @@
 #define kAmountIndex			2;
 #define kDateIndex				3;
 
-@class Payment;
 
-@interface PaymentDetailController : UITableViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate> {
-	
+@interface PaymentDetailController : UIViewController <UITableViewDataSource> {
 }
+
+@property (nonatomic, retain) Payment *payment;
+
+- (IBAction)save:(id)sender;
+- (IBAction)cancel:(id)sender;
+
 
 @end

@@ -1,5 +1,5 @@
 //
-//  PaymentDetailController.m
+//  PaymentDetailController.mPaymentDetailViewController
 //  PaidIt
 //
 //  Created by Martin Schweizer on 21.02.09.
@@ -10,6 +10,24 @@
 
 
 @implementation PaymentDetailController
+
+- (IBAction)save:(id)sender {
+	NSLog(@"save payment detail clicked");
+	[self dismissModalViewControllerAnimated: TRUE];
+}
+
+-(IBAction)cancel:(id)sender {
+	NSLog(@"cancel payment detail clicked");
+	[self dismissModalViewControllerAnimated: TRUE];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return nil;
+}
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.

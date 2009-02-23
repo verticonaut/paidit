@@ -42,8 +42,9 @@
 }
 
 -(IBAction)addPayment:(id)sender {
-	NSLog(@"addPayment clicked");
+	[self presentModalViewController:paymentDetailController animated:TRUE];
 }
+
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.

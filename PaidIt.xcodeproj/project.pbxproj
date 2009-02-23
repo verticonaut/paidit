@@ -16,6 +16,7 @@
 		5B1DA9340F3D8EA400F35DD3 /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1DA9330F3D8EA400F35DD3 /* Payment.m */; };
 		5BB5EBC30F4C550C001CCDCB /* AddEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */; };
 		5BB5EBC50F4C5554001CCDCB /* AddEvent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5EBC40F4C5554001CCDCB /* AddEvent.xib */; };
+		5BB950F70F52A6E900E9B31F /* AddPayment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB950F60F52A6E900E9B31F /* AddPayment.xib */; };
 		5BBA55F40F3B852D00CF98E0 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBA55F30F3B852D00CF98E0 /* Event.m */; };
 		5BC37D430F496ACA003D08DC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC37D420F496ACA003D08DC /* Person.m */; };
 		5BC37D4A0F496D92003D08DC /* PaymentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC37D490F496D92003D08DC /* PaymentType.m */; };
@@ -41,6 +42,7 @@
 		5BB5EBC10F4C550C001CCDCB /* AddEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventsViewController.h; sourceTree = "<group>"; };
 		5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventsViewController.m; sourceTree = "<group>"; };
 		5BB5EBC40F4C5554001CCDCB /* AddEvent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEvent.xib; sourceTree = "<group>"; };
+		5BB950F60F52A6E900E9B31F /* AddPayment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPayment.xib; sourceTree = "<group>"; };
 		5BBA55F20F3B852D00CF98E0 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		5BBA55F30F3B852D00CF98E0 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		5BC37D410F496ACA003D08DC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -122,11 +124,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				5BC37D8D0F497924003D08DC /* EventsViewController.xib */,
-				5BC37F1E0F49943C003D08DC /* Payments.xib */,
 				5BB5EBC40F4C5554001CCDCB /* AddEvent.xib */,
+				5BC37F1E0F49943C003D08DC /* Payments.xib */,
+				5BB950F60F52A6E900E9B31F /* AddPayment.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				5BC37D8E0F497924003D08DC /* EventsViewController.xib in Resources */,
 				5BC37F1F0F49943C003D08DC /* Payments.xib in Resources */,
 				5BB5EBC50F4C5554001CCDCB /* AddEvent.xib in Resources */,
+				5BB950F70F52A6E900E9B31F /* AddPayment.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
