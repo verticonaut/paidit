@@ -24,6 +24,7 @@
 		5BC37D910F49793B003D08DC /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC37D900F49793B003D08DC /* EventsViewController.m */; };
 		5BC37F1D0F49940B003D08DC /* PaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC37F1C0F49940B003D08DC /* PaymentsViewController.m */; };
 		5BC37F1F0F49943C003D08DC /* Payments.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC37F1E0F49943C003D08DC /* Payments.xib */; };
+		5BC5A9000F53FA7D0040CE83 /* PaymentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5A8FF0F53FA7D0040CE83 /* PaymentTableCell.xib */; };
 		5BE7D9860F50A94E00C576C8 /* PaymentDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7D9850F50A94E00C576C8 /* PaymentDetailController.m */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		5BC37F1B0F49940B003D08DC /* PaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentsViewController.h; sourceTree = "<group>"; };
 		5BC37F1C0F49940B003D08DC /* PaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentsViewController.m; sourceTree = "<group>"; };
 		5BC37F1E0F49943C003D08DC /* Payments.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Payments.xib; sourceTree = "<group>"; };
+		5BC5A8FF0F53FA7D0040CE83 /* PaymentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentTableCell.xib; sourceTree = "<group>"; };
 		5BE7D9840F50A94E00C576C8 /* PaymentDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentDetailController.h; sourceTree = "<group>"; };
 		5BE7D9850F50A94E00C576C8 /* PaymentDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetailController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				5BB5EBC40F4C5554001CCDCB /* AddEvent.xib */,
 				5BC37F1E0F49943C003D08DC /* Payments.xib */,
 				5BB950F60F52A6E900E9B31F /* AddPayment.xib */,
+				5BC5A8FF0F53FA7D0040CE83 /* PaymentTableCell.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				5BC37F1F0F49943C003D08DC /* Payments.xib in Resources */,
 				5BB5EBC50F4C5554001CCDCB /* AddEvent.xib in Resources */,
 				5BB950F70F52A6E900E9B31F /* AddPayment.xib in Resources */,
+				5BC5A9000F53FA7D0040CE83 /* PaymentTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

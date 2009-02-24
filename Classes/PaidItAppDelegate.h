@@ -28,5 +28,7 @@
 
 -(void)eventClicked:(NSString *)eventName;
 -(void)addNewEventNamed:(NSString *)eventName;
+-(void)deleteEventNamed:(NSString *)eventName atIndex: (NSUInteger) index;
+
 @end
 

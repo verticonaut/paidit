@@ -24,7 +24,15 @@
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CELL_IDENTIFIER];
 	if (nil == cell)
 	{
+		/*
 		cell = paymentCell;
+		NSLog(@"%@", cell.reuseIdentifier);
+		*/
+		NSArray *nib = [[NSBundle mainBundle]
+							loadNibNamed: @"PaymentTableCell"
+						owner: self
+						options: nil];
+		cell = [nib objectAtIndex: 0];
 	}
 	
 	Payment *payment = [self.payments objectAtIndex:indexPath.row];

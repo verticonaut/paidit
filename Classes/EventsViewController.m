@@ -8,6 +8,7 @@
 
 #import "EventsViewController.h"
 #import "Event.h"
+#import "PaidItAppDelegate.h"
 
 
 @implementation EventsViewController
@@ -39,7 +40,7 @@
 }
 
 -(IBAction)addEvent:(id)sender {
-	[self presentModalViewController:addEventController animated:TRUE];
+	[self presentModalViewController: addEventController animated: TRUE];
 }
 
 -(void)addNewEventNamed:(NSString *)eventName {
@@ -91,6 +92,18 @@
 
 - (void)dealloc {
     [super dealloc];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+	// If row is deleted, remove it from the list.
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+		NSString *eventName = [[tableView cellForRowAtIndexPath: indexPath] text];
+		
+		NSLog(@"Delete event named: %@", eventName);
+		[appDelegate deleteEventNamed: eventName atIndex: indexPath.row ];
+		[eventName release];
+		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];  
+    }
 }
 
 

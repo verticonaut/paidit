@@ -18,7 +18,7 @@
 @synthesize allEvents;
 
 - (void)createDefaultData {
-	self.allEvents = [NSMutableArray arrayWithObjects: [Event initWithName: @"Rodellar"], [Event initWithName: @"Sardegna"], nil];
+	self.allEvents = [NSMutableArray arrayWithObjects: [[Event initWithName: @"Rodellar"] retain], [[Event initWithName: @"Sardegna"] retain], nil];
 }
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
@@ -54,6 +54,12 @@
 
 -(void)addNewEventNamed:(NSString *)eventName {
 	[allEvents addObject: [[[Event alloc] initWithName: eventName] retain]];
+}
+
+-(void)deleteEventNamed:(NSString *)eventName atIndex: (NSUInteger) index {
+	// may be need to search by name - index based might be not safe
+	NSLog(@"deleting event named: %@ at index %d: ", eventName, index);
+	[allEvents removeObjectAtIndex: 0];
 }
 
 
