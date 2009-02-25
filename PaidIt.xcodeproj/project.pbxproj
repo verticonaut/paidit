@@ -13,19 +13,20 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		5B1DA9340F3D8EA400F35DD3 /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1DA9330F3D8EA400F35DD3 /* Payment.m */; };
-		5BB5EBC30F4C550C001CCDCB /* AddEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */; };
 		5BB5EBC50F4C5554001CCDCB /* AddEvent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5EBC40F4C5554001CCDCB /* AddEvent.xib */; };
 		5BB950F70F52A6E900E9B31F /* AddPayment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB950F60F52A6E900E9B31F /* AddPayment.xib */; };
-		5BBA55F40F3B852D00CF98E0 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBA55F30F3B852D00CF98E0 /* Event.m */; };
-		5BC37D430F496ACA003D08DC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC37D420F496ACA003D08DC /* Person.m */; };
-		5BC37D4A0F496D92003D08DC /* PaymentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC37D490F496D92003D08DC /* PaymentType.m */; };
 		5BC37D8E0F497924003D08DC /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC37D8D0F497924003D08DC /* EventsViewController.xib */; };
-		5BC37D910F49793B003D08DC /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC37D900F49793B003D08DC /* EventsViewController.m */; };
-		5BC37F1D0F49940B003D08DC /* PaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC37F1C0F49940B003D08DC /* PaymentsViewController.m */; };
 		5BC37F1F0F49943C003D08DC /* Payments.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC37F1E0F49943C003D08DC /* Payments.xib */; };
 		5BC5A9000F53FA7D0040CE83 /* PaymentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5A8FF0F53FA7D0040CE83 /* PaymentTableCell.xib */; };
-		5BE7D9860F50A94E00C576C8 /* PaymentDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7D9850F50A94E00C576C8 /* PaymentDetailController.m */; };
+		5BDA45950F55E31600B7E253 /* PaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45940F55E31600B7E253 /* PaymentCell.m */; };
+		5BDA45A50F55E35700B7E253 /* AddEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA459C0F55E35700B7E253 /* AddEventsViewController.m */; };
+		5BDA45A70F55E35700B7E253 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45A00F55E35700B7E253 /* EventsViewController.m */; };
+		5BDA45A80F55E35700B7E253 /* PaymentDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45A20F55E35700B7E253 /* PaymentDetailController.m */; };
+		5BDA45A90F55E35700B7E253 /* PaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45A40F55E35700B7E253 /* PaymentsViewController.m */; };
+		5BDA45B20F55E38100B7E253 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45AB0F55E38100B7E253 /* Event.m */; };
+		5BDA45B30F55E38100B7E253 /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45AD0F55E38100B7E253 /* Payment.m */; };
+		5BDA45B40F55E38100B7E253 /* PaymentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45AF0F55E38100B7E253 /* PaymentType.m */; };
+		5BDA45B50F55E38100B7E253 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45B10F55E38100B7E253 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,27 +39,29 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PaidIt_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidIt_Prefix.pch; sourceTree = "<group>"; };
-		5B1DA9320F3D8EA400F35DD3 /* Payment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Payment.h; sourceTree = "<group>"; };
-		5B1DA9330F3D8EA400F35DD3 /* Payment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Payment.m; sourceTree = "<group>"; };
-		5BB5EBC10F4C550C001CCDCB /* AddEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventsViewController.h; sourceTree = "<group>"; };
-		5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventsViewController.m; sourceTree = "<group>"; };
 		5BB5EBC40F4C5554001CCDCB /* AddEvent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEvent.xib; sourceTree = "<group>"; };
 		5BB950F60F52A6E900E9B31F /* AddPayment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPayment.xib; sourceTree = "<group>"; };
-		5BBA55F20F3B852D00CF98E0 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		5BBA55F30F3B852D00CF98E0 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		5BC37D410F496ACA003D08DC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		5BC37D420F496ACA003D08DC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		5BC37D480F496D92003D08DC /* PaymentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentType.h; sourceTree = "<group>"; };
-		5BC37D490F496D92003D08DC /* PaymentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentType.m; sourceTree = "<group>"; };
 		5BC37D8D0F497924003D08DC /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
-		5BC37D8F0F49793B003D08DC /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
-		5BC37D900F49793B003D08DC /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
-		5BC37F1B0F49940B003D08DC /* PaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentsViewController.h; sourceTree = "<group>"; };
-		5BC37F1C0F49940B003D08DC /* PaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentsViewController.m; sourceTree = "<group>"; };
 		5BC37F1E0F49943C003D08DC /* Payments.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Payments.xib; sourceTree = "<group>"; };
 		5BC5A8FF0F53FA7D0040CE83 /* PaymentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentTableCell.xib; sourceTree = "<group>"; };
-		5BE7D9840F50A94E00C576C8 /* PaymentDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentDetailController.h; sourceTree = "<group>"; };
-		5BE7D9850F50A94E00C576C8 /* PaymentDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetailController.m; sourceTree = "<group>"; };
+		5BDA45930F55E31600B7E253 /* PaymentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentCell.h; path = View/PaymentCell.h; sourceTree = "<group>"; };
+		5BDA45940F55E31600B7E253 /* PaymentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentCell.m; path = View/PaymentCell.m; sourceTree = "<group>"; };
+		5BDA459B0F55E35700B7E253 /* AddEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddEventsViewController.h; path = Controller/AddEventsViewController.h; sourceTree = "<group>"; };
+		5BDA459C0F55E35700B7E253 /* AddEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddEventsViewController.m; path = Controller/AddEventsViewController.m; sourceTree = "<group>"; };
+		5BDA459F0F55E35700B7E253 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsViewController.h; path = Controller/EventsViewController.h; sourceTree = "<group>"; };
+		5BDA45A00F55E35700B7E253 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsViewController.m; path = Controller/EventsViewController.m; sourceTree = "<group>"; };
+		5BDA45A10F55E35700B7E253 /* PaymentDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentDetailController.h; path = Controller/PaymentDetailController.h; sourceTree = "<group>"; };
+		5BDA45A20F55E35700B7E253 /* PaymentDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentDetailController.m; path = Controller/PaymentDetailController.m; sourceTree = "<group>"; };
+		5BDA45A30F55E35700B7E253 /* PaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentsViewController.h; path = Controller/PaymentsViewController.h; sourceTree = "<group>"; };
+		5BDA45A40F55E35700B7E253 /* PaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentsViewController.m; path = Controller/PaymentsViewController.m; sourceTree = "<group>"; };
+		5BDA45AA0F55E38100B7E253 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Model/Event.h; sourceTree = "<group>"; };
+		5BDA45AB0F55E38100B7E253 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = Model/Event.m; sourceTree = "<group>"; };
+		5BDA45AC0F55E38100B7E253 /* Payment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Payment.h; path = Model/Payment.h; sourceTree = "<group>"; };
+		5BDA45AD0F55E38100B7E253 /* Payment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Payment.m; path = Model/Payment.m; sourceTree = "<group>"; };
+		5BDA45AE0F55E38100B7E253 /* PaymentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentType.h; path = Model/PaymentType.h; sourceTree = "<group>"; };
+		5BDA45AF0F55E38100B7E253 /* PaymentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentType.m; path = Model/PaymentType.m; sourceTree = "<group>"; };
+		5BDA45B00F55E38100B7E253 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Model/Person.h; sourceTree = "<group>"; };
+		5BDA45B10F55E38100B7E253 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Model/Person.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,16 +82,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5BDA458E0F55E2DF00B7E253 /* View */,
 				1D3623240D0F684500981E51 /* PaidItAppDelegate.h */,
 				1D3623250D0F684500981E51 /* PaidItAppDelegate.m */,
-				5BC37D8F0F49793B003D08DC /* EventsViewController.h */,
-				5BC37D900F49793B003D08DC /* EventsViewController.m */,
-				5BC37F1B0F49940B003D08DC /* PaymentsViewController.h */,
-				5BC37F1C0F49940B003D08DC /* PaymentsViewController.m */,
-				5BB5EBC10F4C550C001CCDCB /* AddEventsViewController.h */,
-				5BB5EBC20F4C550C001CCDCB /* AddEventsViewController.m */,
-				5BE7D9840F50A94E00C576C8 /* PaymentDetailController.h */,
-				5BE7D9850F50A94E00C576C8 /* PaymentDetailController.m */,
+				5BBA55F10F3B851E00CF98E0 /* Model */,
+				5BDA45780F55E02800B7E253 /* Controller */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -104,7 +102,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				5BBA55F10F3B851E00CF98E0 /* Model */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -150,17 +147,40 @@
 		5BBA55F10F3B851E00CF98E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5BBA55F20F3B852D00CF98E0 /* Event.h */,
-				5BBA55F30F3B852D00CF98E0 /* Event.m */,
-				5B1DA9320F3D8EA400F35DD3 /* Payment.h */,
-				5B1DA9330F3D8EA400F35DD3 /* Payment.m */,
-				5BC37D410F496ACA003D08DC /* Person.h */,
-				5BC37D420F496ACA003D08DC /* Person.m */,
-				5BC37D480F496D92003D08DC /* PaymentType.h */,
-				5BC37D490F496D92003D08DC /* PaymentType.m */,
+				5BDA45AA0F55E38100B7E253 /* Event.h */,
+				5BDA45AB0F55E38100B7E253 /* Event.m */,
+				5BDA45AC0F55E38100B7E253 /* Payment.h */,
+				5BDA45AD0F55E38100B7E253 /* Payment.m */,
+				5BDA45AE0F55E38100B7E253 /* PaymentType.h */,
+				5BDA45AF0F55E38100B7E253 /* PaymentType.m */,
+				5BDA45B00F55E38100B7E253 /* Person.h */,
+				5BDA45B10F55E38100B7E253 /* Person.m */,
 			);
 			name = Model;
-			path = Classes;
+			sourceTree = "<group>";
+		};
+		5BDA45780F55E02800B7E253 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA459B0F55E35700B7E253 /* AddEventsViewController.h */,
+				5BDA459C0F55E35700B7E253 /* AddEventsViewController.m */,
+				5BDA459F0F55E35700B7E253 /* EventsViewController.h */,
+				5BDA45A00F55E35700B7E253 /* EventsViewController.m */,
+				5BDA45A10F55E35700B7E253 /* PaymentDetailController.h */,
+				5BDA45A20F55E35700B7E253 /* PaymentDetailController.m */,
+				5BDA45A30F55E35700B7E253 /* PaymentsViewController.h */,
+				5BDA45A40F55E35700B7E253 /* PaymentsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5BDA458E0F55E2DF00B7E253 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA45930F55E31600B7E253 /* PaymentCell.h */,
+				5BDA45940F55E31600B7E253 /* PaymentCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,14 +243,15 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* PaidItAppDelegate.m in Sources */,
-				5BBA55F40F3B852D00CF98E0 /* Event.m in Sources */,
-				5B1DA9340F3D8EA400F35DD3 /* Payment.m in Sources */,
-				5BC37D430F496ACA003D08DC /* Person.m in Sources */,
-				5BC37D4A0F496D92003D08DC /* PaymentType.m in Sources */,
-				5BC37D910F49793B003D08DC /* EventsViewController.m in Sources */,
-				5BC37F1D0F49940B003D08DC /* PaymentsViewController.m in Sources */,
-				5BB5EBC30F4C550C001CCDCB /* AddEventsViewController.m in Sources */,
-				5BE7D9860F50A94E00C576C8 /* PaymentDetailController.m in Sources */,
+				5BDA45950F55E31600B7E253 /* PaymentCell.m in Sources */,
+				5BDA45A50F55E35700B7E253 /* AddEventsViewController.m in Sources */,
+				5BDA45A70F55E35700B7E253 /* EventsViewController.m in Sources */,
+				5BDA45A80F55E35700B7E253 /* PaymentDetailController.m in Sources */,
+				5BDA45A90F55E35700B7E253 /* PaymentsViewController.m in Sources */,
+				5BDA45B20F55E38100B7E253 /* Event.m in Sources */,
+				5BDA45B30F55E38100B7E253 /* Payment.m in Sources */,
+				5BDA45B40F55E38100B7E253 /* PaymentType.m in Sources */,
+				5BDA45B50F55E38100B7E253 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

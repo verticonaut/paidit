@@ -8,9 +8,9 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="13"/>
 			<integer value="18"/>
 			<integer value="3" id="11"/>
+			<integer value="13"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -255,6 +255,14 @@
 					</object>
 					<int key="connectionID">30</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">paymentsTable</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="938410303"/>
+					</object>
+					<int key="connectionID">31</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -398,7 +406,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">30</int>
+			<int key="maxID">31</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -436,7 +444,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/AddEventsViewController.h</string>
+						<string key="minorKey">Classes/Controller/AddEventsViewController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -463,7 +471,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/EventsViewController.h</string>
+						<string key="minorKey">Classes/Controller/EventsViewController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -509,7 +517,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/PaymentDetailController.h</string>
+						<string key="minorKey">Classes/Controller/PaymentDetailController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -526,17 +534,19 @@
 							<string>appDelegate</string>
 							<string>paymentCell</string>
 							<string>paymentDetailController</string>
+							<string>paymentsTable</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>PaidItAppDelegate</string>
 							<string>UITableViewCell</string>
 							<string>PaymentDetailController</string>
+							<string>UITableView</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/PaymentsViewController.h</string>
+						<string key="minorKey">Classes/Controller/PaymentsViewController.h</string>
 					</object>
 				</object>
 			</object>
