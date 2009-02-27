@@ -27,6 +27,9 @@
 		5BDA45B30F55E38100B7E253 /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45AD0F55E38100B7E253 /* Payment.m */; };
 		5BDA45B40F55E38100B7E253 /* PaymentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45AF0F55E38100B7E253 /* PaymentType.m */; };
 		5BDA45B50F55E38100B7E253 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45B10F55E38100B7E253 /* Person.m */; };
+		5BF511E20F589F2F00876DCB /* PaymentDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF511E10F589F2F00876DCB /* PaymentDetail.xib */; };
+		5BF511EC0F589FB100876DCB /* AddPaymentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF511EB0F589FB100876DCB /* AddPaymentController.m */; };
+		5BF6B0EA0F58711D00D871E1 /* ValueTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6B0E90F58711D00D871E1 /* ValueTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,11 @@
 		5BDA45AF0F55E38100B7E253 /* PaymentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentType.m; path = Model/PaymentType.m; sourceTree = "<group>"; };
 		5BDA45B00F55E38100B7E253 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Model/Person.h; sourceTree = "<group>"; };
 		5BDA45B10F55E38100B7E253 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Model/Person.m; sourceTree = "<group>"; };
+		5BF511E10F589F2F00876DCB /* PaymentDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentDetail.xib; sourceTree = "<group>"; };
+		5BF511EA0F589FB100876DCB /* AddPaymentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPaymentController.h; path = Controller/AddPaymentController.h; sourceTree = "<group>"; };
+		5BF511EB0F589FB100876DCB /* AddPaymentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddPaymentController.m; path = Controller/AddPaymentController.m; sourceTree = "<group>"; };
+		5BF6B0E80F58711D00D871E1 /* ValueTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValueTableCell.h; path = View/ValueTableCell.h; sourceTree = "<group>"; };
+		5BF6B0E90F58711D00D871E1 /* ValueTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValueTableCell.m; path = View/ValueTableCell.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +138,7 @@
 				5BC37F1E0F49943C003D08DC /* Payments.xib */,
 				5BB950F60F52A6E900E9B31F /* AddPayment.xib */,
 				5BC5A8FF0F53FA7D0040CE83 /* PaymentTableCell.xib */,
+				5BF511E10F589F2F00876DCB /* PaymentDetail.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -170,6 +179,8 @@
 				5BDA45A20F55E35700B7E253 /* PaymentDetailController.m */,
 				5BDA45A30F55E35700B7E253 /* PaymentsViewController.h */,
 				5BDA45A40F55E35700B7E253 /* PaymentsViewController.m */,
+				5BF511EA0F589FB100876DCB /* AddPaymentController.h */,
+				5BF511EB0F589FB100876DCB /* AddPaymentController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -179,6 +190,8 @@
 			children = (
 				5BDA45930F55E31600B7E253 /* PaymentCell.h */,
 				5BDA45940F55E31600B7E253 /* PaymentCell.m */,
+				5BF6B0E80F58711D00D871E1 /* ValueTableCell.h */,
+				5BF6B0E90F58711D00D871E1 /* ValueTableCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -231,6 +244,7 @@
 				5BB5EBC50F4C5554001CCDCB /* AddEvent.xib in Resources */,
 				5BB950F70F52A6E900E9B31F /* AddPayment.xib in Resources */,
 				5BC5A9000F53FA7D0040CE83 /* PaymentTableCell.xib in Resources */,
+				5BF511E20F589F2F00876DCB /* PaymentDetail.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +266,8 @@
 				5BDA45B30F55E38100B7E253 /* Payment.m in Sources */,
 				5BDA45B40F55E38100B7E253 /* PaymentType.m in Sources */,
 				5BDA45B50F55E38100B7E253 /* Person.m in Sources */,
+				5BF6B0EA0F58711D00D871E1 /* ValueTableCell.m in Sources */,
+				5BF511EC0F589FB100876DCB /* AddPaymentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

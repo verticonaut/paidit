@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import	"Payment.h"
 
-@class AddPaymentController;
-
 #define kNumberOfEditableRows	4;
 #define kPersonNameIndex		0;
 #define kPaymentTypeIndex		1;
@@ -19,14 +17,16 @@
 #define kDateIndex				4;
 
 
-@interface PaymentDetailController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface AddPaymentController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
 	Payment *payment;
-
-	IBOutlet UITableView *detailTable;
-	IBOutlet AddPaymentController *addPaymentController;
+	
+	IBOutlet UITableView *editTable;
 }
 
 @property (readwrite, retain) Payment* payment;
+
+- (IBAction)save:(id)sender;
+- (IBAction)cancel:(id)sender;
 
 
 @end

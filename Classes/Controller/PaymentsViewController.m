@@ -6,6 +6,7 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
+#import "PaidItAppDelegate.h"
 #import "PaymentsViewController.h"
 #import "Payment.h"
 
@@ -68,6 +69,8 @@
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	NSLog(@"clicked payment: {%d}", indexPath.row);
+	Payment *dummy = [payments objectAtIndex: indexPath.row ];
+	[appDelegate paymentClicked: dummy];
 	return nil;
 }
 
@@ -78,7 +81,8 @@
 }
 
 -(IBAction)addPayment:(id)sender {
-	[self presentModalViewController:paymentDetailController animated:TRUE];
+	[addPaymentController setPayment: nil];
+	[self presentModalViewController: addPaymentController animated:TRUE];
 }
 
 // does not need??

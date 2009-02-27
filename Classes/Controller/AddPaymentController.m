@@ -6,15 +6,25 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "PaymentDetailController.h"
+#import "AddPaymentController.h"
 #import "ValueTableCell.h"
 #import "Payment.h"
 
 @class Payment;
 
-@implementation PaymentDetailController
+@implementation AddPaymentController
 
 @synthesize payment;
+
+- (IBAction)save:(id)sender {
+	NSLog(@"save payment detail clicked");
+	[self dismissModalViewControllerAnimated: TRUE];
+}
+
+-(IBAction)cancel:(id)sender {
+	NSLog(@"cancel payment detail clicked");
+	[self dismissModalViewControllerAnimated: TRUE];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	// TODO make constant
@@ -27,31 +37,31 @@
 	{
 		cell = [[[ValueTableCell alloc] initWithFrame: CGRectZero reuseIdentifier: @"paymentDetailCell"] autorelease];
 	}
-
+	
 	NSNumberFormatter *numberFormatter;
 	NSDateFormatter *dateFormatter;
 	NSUInteger row = [indexPath row];
 	switch (row) {
-//		case kPersonNameIndex:
+			//		case kPersonNameIndex:
 		case 0:
 			[cell setValue: self.payment.person.name label: @"Person" ];
 			break;
-//		case kPaymentTypeIndex:
+			//		case kPaymentTypeIndex:
 		case 1:
 			[cell setValue: self.payment.paymentType.name label: @"Payment Type" ];
 			break;
-//		case kAmountIndex:
+			//		case kAmountIndex:
 		case 2:
 			numberFormatter = [[[NSNumberFormatter alloc] init] autorelease];
 			[numberFormatter setNumberStyle: NSNumberFormatterDecimalStyle];
 			[numberFormatter setFormat:@"###.00"];
 			[cell setValue: [NSString stringWithFormat:@"%@", [numberFormatter stringFromNumber: self.payment.amount]] label: @"Amount" ];
 			break;
-//		case kCurrencyIndex:
+			//		case kCurrencyIndex:
 		case 3:
 			[cell setValue: self.payment.currency label: @"Currency" ];
 			break;
-//		case kDateIndex:
+			//		case kDateIndex:
 		case 4:
 			dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
 			[dateFormatter setDateFormat: @"yyyy-MM-dd"]; // 2009-12-24
@@ -65,42 +75,42 @@
 }
 
 /*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+ // The designated initializer. Override to perform setup that is required before the view is loaded.
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+ if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+ // Custom initialization
+ }
+ return self;
+ }
+ */
 
 /*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
+ // Implement loadView to create a view hierarchy programmatically, without using a nib.
+ - (void)loadView {
+ }
 */
 
--(IBAction)editPayment:(id)sender {
-	[addPaymentController setPayment: payment];
-	[self presentModalViewController: addPaymentController animated:TRUE];
-}
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+ // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+ - (void)viewDidLoad {
+	[super viewDidLoad];
+	 
+	 if (self.payment == nil) {
+		 self.navigationItem.title = @"Add Payment";
+	 } else {
+		 self.navigationItem.title = @"Edit Payment";
+	 }
 
-	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
-											   initWithBarButtonSystemItem: UIBarButtonSystemItemEdit
-											   target:self
-											   action:@selector(editPayment:)] autorelease];
  }
 
+
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
@@ -112,17 +122,18 @@
     [super dealloc];
 }
 
--(void)setPayment:(Payment *) newPayment {
-	[payment release];
-	payment = [newPayment retain];
-	[detailTable reloadData];
-}
 
 - (void)viewWillAppear:(BOOL)animated 
 {
 	NSLog(@"view will appear");
-//	[self.parentViewController addSubview: self];
+	//	[self.parentViewController addSubview: self];
     [super viewWillAppear:animated];
+}
+
+-(void)setPayment:(Payment *) newPayment {
+	[payment release];
+	payment = [newPayment retain];
+	[editTable reloadData];
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "PaidItAppDelegate.h"
 #import "PaymentsViewController.h"
 #import "Event.h"
+#import "Payment.h"
 
 
 @implementation PaidItAppDelegate
@@ -16,6 +17,7 @@
 @synthesize window;
 @synthesize eventsController;
 @synthesize allEvents;
+@synthesize paymentDetailController;
 
 - (void)createDefaultData {
 	self.allEvents = [NSMutableArray arrayWithObjects: [[Event initWithName: @"Rodellar"] retain], [[Event initWithName: @"Sardegna"] retain], nil];
@@ -52,6 +54,11 @@
 	[navController pushViewController: paymentsController animated: YES];
 }
 
+-(void)paymentClicked:(Payment *) payment {
+	[paymentDetailController setPayment: payment];
+	[navController pushViewController: paymentDetailController animated: YES];
+}
+
 -(void)addNewEventNamed:(NSString *)eventName {
 	[allEvents addObject: [[[Event alloc] initWithName: eventName] retain]];
 }
@@ -67,7 +74,9 @@
 - (void)dealloc {
 	[allEvents release];
 	[eventsController release];
+	[paymentDetailController release];
     [window release];
+	
     [super dealloc];
 }
 

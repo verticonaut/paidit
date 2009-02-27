@@ -233,14 +233,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">paymentDetailController</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="189983415"/>
-					</object>
-					<int key="connectionID">15</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">paymentCell</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="912919599"/>
@@ -262,6 +254,14 @@
 						<reference key="destination" ref="938410303"/>
 					</object>
 					<int key="connectionID">31</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">addPaymentController</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="189983415"/>
+					</object>
+					<int key="connectionID">32</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -372,7 +372,7 @@
 					<string>UIResponder</string>
 					<string>{{354, 376}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>PaymentDetailController</string>
+					<string>AddPaymentController</string>
 					<string>{{403, 344}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{283, 643}, {320, 44}}</string>
@@ -406,7 +406,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">31</int>
+			<int key="maxID">32</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -448,6 +448,27 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">AddPaymentController</string>
+					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSMutableArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>cancel:</string>
+							<string>save:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Classes/Controller/AddPaymentController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">EventsViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
@@ -483,6 +504,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>eventsController</string>
 							<string>navController</string>
+							<string>paymentDetailController</string>
 							<string>paymentsController</string>
 							<string>window</string>
 						</object>
@@ -490,6 +512,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>EventsViewController</string>
 							<string>UINavigationController</string>
+							<string>PaymentDetailController</string>
 							<string>PaymentsViewController</string>
 							<string>UIWindow</string>
 						</object>
@@ -502,19 +525,6 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">PaymentDetailController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSMutableArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>cancel:</string>
-							<string>save:</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
-							<string>id</string>
-						</object>
-					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">Classes/Controller/PaymentDetailController.h</string>
@@ -531,16 +541,16 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSMutableArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>addPaymentController</string>
 							<string>appDelegate</string>
 							<string>paymentCell</string>
-							<string>paymentDetailController</string>
 							<string>paymentsTable</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>AddPaymentController</string>
 							<string>PaidItAppDelegate</string>
 							<string>UITableViewCell</string>
-							<string>PaymentDetailController</string>
 							<string>UITableView</string>
 						</object>
 					</object>

@@ -16,7 +16,7 @@
 
 
 @class PaidItAppDelegate;
-@class PaymentDetailController;
+@class AddPaymentController;
 
 @interface PaymentsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate> {
 	NSMutableArray *payments;
@@ -24,7 +24,7 @@
 	IBOutlet UITableViewCell *paymentCell;
 	IBOutlet UITableView *paymentsTable;
 	IBOutlet PaidItAppDelegate *appDelegate;
-	IBOutlet PaymentDetailController *paymentDetailController;
+	IBOutlet AddPaymentController *addPaymentController;
 	
 	NSIndexPath *currentPaymentIndexPath;
 }
