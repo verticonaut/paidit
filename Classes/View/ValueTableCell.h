@@ -10,9 +10,11 @@
 
 
 @interface ValueTableCell : UITableViewCell {
+	UILabel *label;
 	UILabel *valueLabel;
 }
 
+@property (nonatomic, retain) UILabel *label;
 @property (nonatomic, retain) UILabel *valueLabel;
 
 -(id) setValue:(NSString *) value label:(NSString *)label;

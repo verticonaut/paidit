@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import	"Payment.h"
+#import	"PaidItAppDelegate.h"
 
 #define kNumberOfEditableRows	4;
 #define kPersonNameIndex		0;
@@ -17,10 +18,11 @@
 #define kDateIndex				4;
 
 
-@interface AddPaymentController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface AddPaymentController : UIViewController <UITableViewDataSource, UITableViewDelegate, DateViewDelegate> {
 	Payment *payment;
 	
 	IBOutlet UITableView *editTable;
+	IBOutlet PaidItAppDelegate *appDelegate;
 }
 
 @property (readwrite, retain) Payment* payment;

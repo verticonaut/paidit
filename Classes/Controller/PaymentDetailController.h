@@ -10,6 +10,7 @@
 #import	"Payment.h"
 
 @class AddPaymentController;
+@class PaidItAppDelegate;
 
 #define kNumberOfEditableRows	4;
 #define kPersonNameIndex		0;

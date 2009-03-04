@@ -6,6 +6,7 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
+#import "DateViewController.h"
 #import "AddPaymentController.h"
 #import "ValueTableCell.h"
 #import "Payment.h"
@@ -63,14 +64,17 @@
 			break;
 			//		case kDateIndex:
 		case 4:
-			dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
-			[dateFormatter setDateFormat: @"yyyy-MM-dd"]; // 2009-12-24
+			dateFormatter = [[NSDateFormatter alloc] init];
+			[dateFormatter setDateFormat:@"MMMM dd, yyyy"];
 			[cell setValue: [dateFormatter stringFromDate: self.payment.date] label: @"Date" ];
+			[dateFormatter release];
+
 			break;
 		default:
 			break;
 	}
 	
+
 	return cell;
 }
 
@@ -96,11 +100,12 @@
 	[super viewDidLoad];
 	 
 	 if (self.payment == nil) {
+		 self.payment = [[Payment alloc] init];
+		 self.payment.date = [NSDate date];
 		 self.navigationItem.title = @"Add Payment";
 	 } else {
 		 self.navigationItem.title = @"Edit Payment";
 	 }
-
  }
 
 
@@ -122,18 +127,50 @@
     [super dealloc];
 }
 
-
-- (void)viewWillAppear:(BOOL)animated 
-{
-	NSLog(@"view will appear");
-	//	[self.parentViewController addSubview: self];
-    [super viewWillAppear:animated];
-}
-
 -(void)setPayment:(Payment *) newPayment {
 	[payment release];
 	payment = [newPayment retain];
 	[editTable reloadData];
 }
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	NSUInteger row = [indexPath row];
+	NSLog(@"edit cell: {%d}", row);
+	DateViewController *controller;
+	switch (row) {
+			//		case kPersonNameIndex:
+		case 0:
+			break;
+			//		case kPaymentTypeIndex:
+		case 1:
+			break;
+			//		case kAmountIndex:
+		case 2:
+			break;
+			//		case kCurrencyIndex:
+		case 3:
+			break;
+			//		case kDateIndex:
+		case 4:
+			controller = [[DateViewController alloc] init];
+			controller.delegate = self;
+			controller.date = payment.date;
+			[self presentModalViewController:controller animated: TRUE];
+			[controller release];
+			break;
+		default:
+			break;
+	}
+	return nil;
+}
+
+#pragma mark -
+#pragma mark DateController Protocoll impl
+- (void)takeNewDate:(NSDate *)newDate
+{
+    payment.date = newDate;
+	[editTable reloadData];
+}
+
 
 @end

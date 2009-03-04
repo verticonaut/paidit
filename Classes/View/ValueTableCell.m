@@ -11,18 +11,22 @@
 
 @implementation ValueTableCell
 
-@synthesize valueLabel;
+@synthesize label, valueLabel;
 
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
-		CGRect rect = CGRectMake(15.0, 16.0, 250.0, 15.0);
-		valueLabel = [[UILabel alloc] initWithFrame: rect];
+		label = [[UILabel alloc] initWithFrame: CGRectMake(15.0, 16.0, 120.0, 15.0)];
+		label.font = [UIFont boldSystemFontOfSize: 14];
+		label.text = @"LABEL to be set ...";
+		
+		[self.contentView addSubview: label ];
+
+		valueLabel = [[UILabel alloc] initWithFrame: CGRectMake(125.0, 16.0, 150.0, 15.0)];
 		valueLabel.font = [UIFont systemFontOfSize: 14];	
-		valueLabel.text = @"to be set ...";
-		valueLabel.textColor = [UIColor grayColor];
+		valueLabel.text = @"VALUE to be set ...";
 		
 		[self.contentView addSubview: valueLabel ];
-    }
+	}
 	
     return self;
 }
@@ -35,6 +39,29 @@
     // Configure the view for the selected state
 }
 
+-(id) setValue:(NSString *)value label:(NSString *)aLabel {
+	NSString *newLabel;
+	newLabel = [aLabel stringByAppendingString: @" :"];
+	label.text = newLabel;
+	valueLabel.text = value;
+
+	return self;
+}
+
+-(id) setValue:(NSString *) value {
+	[self setValue: value label: nil];
+	return self;
+}
+
+
+- (void)dealloc {
+	[label release];
+	[valueLabel release];
+
+	[super dealloc];
+}
+
+/* OLD stuff showing flex cell with color setting
 -(id) setValue:(NSString *) value label:(NSString *)label {
 	NSString *valueStr = [[value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] autorelease];
 	if (nil != value) {
@@ -50,18 +77,6 @@
 	
 	return self;
 }
-
--(id) setValue:(NSString *) value {
-	[self setValue: value label: nil];
-	return self;
-}
-
-
-- (void)dealloc {
-	[valueLabel release];
-
-	[super dealloc];
-}
-
+*/
 
 @end

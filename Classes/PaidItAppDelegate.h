@@ -23,6 +23,7 @@
 	IBOutlet UINavigationController *navController;
 	IBOutlet PaymentsViewController *paymentsController;
 	IBOutlet PaymentDetailController *paymentDetailController;
+	
 }
 
 @property (nonatomic, retain) NSMutableArray *allEvents;
@@ -36,6 +37,7 @@
 -(void)paymentClicked:(Payment *)payment;
 -(void)addNewEventNamed:(NSString *)eventName;
 -(void)deleteEventNamed:(NSString *)eventName atIndex: (NSUInteger) index;
+-(UINavigationController *)getNavController;
 
 @end
 

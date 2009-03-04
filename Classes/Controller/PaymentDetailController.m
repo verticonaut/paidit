@@ -12,6 +12,7 @@
 
 @class Payment;
 
+
 @implementation PaymentDetailController
 
 @synthesize payment;
@@ -54,7 +55,7 @@
 //		case kDateIndex:
 		case 4:
 			dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
-			[dateFormatter setDateFormat: @"yyyy-MM-dd"]; // 2009-12-24
+			[dateFormatter setDateFormat: @"MMMM dd, yyyy"];
 			[cell setValue: [dateFormatter stringFromDate: self.payment.date] label: @"Date" ];
 			break;
 		default:
@@ -124,5 +125,7 @@
 //	[self.parentViewController addSubview: self];
     [super viewWillAppear:animated];
 }
+
+
 
 @end

@@ -80,5 +80,8 @@
     [super dealloc];
 }
 
+- (UINavigationController *)getNavController {
+	return navController;
+}
 
 @end
