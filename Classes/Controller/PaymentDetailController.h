@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import	"Event.h"
 #import	"Payment.h"
+#import	"AddPaymentController.h"
 
 @class AddPaymentController;
 @class PaidItAppDelegate;
-
+@class PaymentEditorDelegate;
+ 
 #define kNumberOfEditableRows	4;
 #define kPersonNameIndex		0;
 #define kPaymentTypeIndex		1;
@@ -21,7 +23,7 @@
 #define kDateIndex				4;
 
 
-@interface PaymentDetailController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface PaymentDetailController : UIViewController <UITableViewDataSource, UITableViewDelegate, PaymentEditorDelegate> {
 	Payment *payment;
 
 	IBOutlet UITableView *detailTable;

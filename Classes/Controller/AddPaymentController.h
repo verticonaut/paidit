@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import	"Event.h"
 #import	"Payment.h"
 #import	"PaidItAppDelegate.h"
+#import	"DateViewController.h"
+#import	"SelectionListViewController.h"
 
 #define kNumberOfEditableRows	4;
 #define kPersonNameIndex		0;
@@ -18,17 +19,23 @@
 #define kCurrencyIndex			3;
 #define kDateIndex				4;
 
+@protocol PaymentEditorDelegate <NSObject>
+	@required
+	- (void)paymentSaved:(Payment *)payment;
+@end
 
-@interface AddPaymentController : UIViewController <UITableViewDataSource, UITableViewDelegate, DateViewDelegate> {
-	Event *event;
+
+@interface AddPaymentController : UIViewController <UITableViewDataSource, UITableViewDelegate, DateViewDelegate, SelectionListViewControllerDelegate, UITextFieldDelegate> {
 	Payment *payment;
 	
 	IBOutlet UITableView *editTable;
 	IBOutlet PaidItAppDelegate *appDelegate;
+	
+    id <PaymentEditorDelegate> delegate;
 }
 
-@property (readwrite, retain) Event* event;
-@property (readwrite, retain) Payment* payment;
+@property (readwrite, assign) Payment* payment;
+@property (nonatomic, assign) id <PaymentEditorDelegate> delegate;
 
 - (IBAction)save:(id)sender;
 - (IBAction)cancel:(id)sender;

@@ -65,6 +65,7 @@
 	return cell;
 }
 
+
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -83,7 +84,18 @@
 
 -(IBAction)editPayment:(id)sender {
 	[addPaymentController setPayment: payment];
+	[addPaymentController setDelegate: self];
 	[self presentModalViewController: addPaymentController animated:TRUE];
+}
+
+- (void)paymentSaved:(Payment *)aPayment {
+	payment.person = aPayment.person;
+	payment.paymentType = aPayment.paymentType;
+	payment.amount = aPayment.amount;
+	payment.currency = aPayment.currency;
+	payment.date = aPayment.date;
+	
+	[detailTable reloadData];
 }
 
 - (void)viewDidLoad {
@@ -121,10 +133,14 @@
 
 - (void)viewWillAppear:(BOOL)animated 
 {
-	NSLog(@"view will appear");
+	NSLog(@"detail will appear");
 //	[self.parentViewController addSubview: self];
     [super viewWillAppear:animated];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+	NSLog(@"detail will disappear");
+	[super viewWillDisappear: animated];
+}
 
 @end

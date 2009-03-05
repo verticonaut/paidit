@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Event.h"
+#import "AddPaymentController.h"
 
 #define kLabelDate		1
 #define kLabelName		2
@@ -21,8 +22,7 @@
 @class Event;
 
 
-@interface PaymentsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate> {
-	Event *event;
+@interface PaymentsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate, PaymentEditorDelegate> {
 	NSMutableArray *payments;
 
 	IBOutlet UITableViewCell *paymentCell;
@@ -33,7 +33,6 @@
 	NSIndexPath *currentPaymentIndexPath;
 }
 
-@property (readwrite, retain) Event* event;
 @property (nonatomic, retain) NSMutableArray *payments;
 @property (nonatomic, retain) NSIndexPath *currentPaymentIndexPath;
 

@@ -11,11 +11,11 @@
 
 @interface ValueTableCell : UITableViewCell {
 	UILabel *label;
-	UILabel *valueLabel;
+	UITextField *textField;
 }
 
 @property (nonatomic, retain) UILabel *label;
-@property (nonatomic, retain) UILabel *valueLabel;
+@property (nonatomic, retain) UITextField *textField;
 
 -(id) setValue:(NSString *) value label:(NSString *)label;
 -(id) setValue:(NSString *) value;

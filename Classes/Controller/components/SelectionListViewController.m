@@ -10,12 +10,14 @@
 #import "SelectionListViewController.h"
 
 @implementation SelectionListViewController
+
 @synthesize list;
 @synthesize tableView;
 @synthesize lastIndexPath;
 @synthesize initialSelection;
 @synthesize delegate;
 @synthesize propertySelector;
+@synthesize indexTag;
 
 -(IBAction)cancel
 {
@@ -24,7 +26,7 @@
 }
 -(IBAction)save
 {
-    [self.delegate rowChosen:[lastIndexPath row]];
+    [self.delegate rowChosen:[lastIndexPath row] indexTag: indexTag ];
 	[self dismissModalViewControllerAnimated: TRUE];
 	// [self.delegate dismissModalViewControllerAnimated: TRUE];
 }

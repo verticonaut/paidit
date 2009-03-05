@@ -7,16 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Event.h"
 #import "Payment.h"
 
 @class EventsViewController;
 @class PaymentsViewController;
 @class PaymentDetailController;
-@class Payment;
 
 @interface PaidItAppDelegate : NSObject <UIApplicationDelegate> {
 	// model
 	NSMutableArray *allEvents;
+	Event *currentEvent;
 
     IBOutlet UIWindow *window;
     IBOutlet EventsViewController *eventsController;
@@ -32,6 +33,7 @@
 @property (nonatomic, retain) IBOutlet EventsViewController *eventsController;
 @property (nonatomic, retain) IBOutlet PaymentsViewController *paymentsController;
 @property (nonatomic, retain) IBOutlet PaymentDetailController *paymentDetailController;
+@property (nonatomic, retain) Event *currentEvent;
 
 -(void)eventClicked:(NSString *)eventName;
 -(void)paymentClicked:(Payment *)payment;

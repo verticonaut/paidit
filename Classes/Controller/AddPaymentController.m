@@ -10,24 +10,29 @@
 #import "AddPaymentController.h"
 #import "ValueTableCell.h"
 #import "Payment.h"
+#import "PaidItAppDelegate.h"
 #import "SelectionListViewController.h"
 
 @class Payment;
 
 @implementation AddPaymentController
 
-@synthesize event;
 @synthesize payment;
+@synthesize delegate;
 
-
+- (Event*)getCurrentEvent {
+	PaidItAppDelegate *paidItAppDelegate;
+	paidItAppDelegate = (PaidItAppDelegate*)[[UIApplication sharedApplication] delegate];
+	return [paidItAppDelegate currentEvent];
+}
 
 - (IBAction)save:(id)sender {
 	NSLog(@"save payment detail clicked");
+	[delegate paymentSaved: payment];
 	[self dismissModalViewControllerAnimated: TRUE];
 }
 
 -(IBAction)cancel:(id)sender {
-	NSLog(@"cancel payment detail clicked");
 	[self dismissModalViewControllerAnimated: TRUE];
 }
 
@@ -37,7 +42,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"paymentDetailCell"];
+	ValueTableCell *cell = (ValueTableCell*)[tableView dequeueReusableCellWithIdentifier:@"paymentDetailCell"];
 	if (nil == cell)
 	{
 		cell = [[[ValueTableCell alloc] initWithFrame: CGRectZero reuseIdentifier: @"paymentDetailCell"] autorelease];
@@ -49,28 +54,28 @@
 	NSDateFormatter *dateFormatter;
 	NSUInteger row = [indexPath row];
 	switch (row) {
-			//		case kPersonNameIndex:
-		case 0:
+		case 0: // kPersonNameIndex
 			[cell setValue: self.payment.person.name label: @"Person" ];
 			break;
-			//		case kPaymentTypeIndex:
-		case 1:
+		case 1: // kPaymentTypeIndex
 			[cell setValue: self.payment.paymentType.name label: @"Payment Type" ];
 			break;
-			//		case kAmountIndex:
-		case 2:
+		case 2: // kAmountIndex
 			numberFormatter = [[[NSNumberFormatter alloc] init] autorelease];
 			[numberFormatter setNumberStyle: NSNumberFormatterDecimalStyle];
 			[numberFormatter setFormat:@"###.00"];
 			[cell setValue: [NSString stringWithFormat:@"%@", [numberFormatter stringFromNumber: self.payment.amount]] label: @"Amount" ];
-			
+			cell.textField.enabled = TRUE;
+			cell.textField.delegate = self;
+			cell.textField.clearsOnBeginEditing = NO;
+			[cell.textField addTarget:self 
+							action: @selector(textFieldDone:) 
+							forControlEvents: UIControlEventEditingDidEndOnExit];
 			break;
-			//		case kCurrencyIndex:
-		case 3:
+		case 3: // kCurrencyIndex
 			[cell setValue: self.payment.currency.name label: @"Currency" ];
 			break;
-			//		case kDateIndex:
-		case 4:
+		case 4: // kDateIndex
 			dateFormatter = [[NSDateFormatter alloc] init];
 			[dateFormatter setDateFormat:@"MMMM dd, yyyy"];
 			[cell setValue: [dateFormatter stringFromDate: self.payment.date] label: @"Date" ];
@@ -80,7 +85,6 @@
 		default:
 			break;
 	}
-	
 
 	return cell;
 }
@@ -131,12 +135,20 @@
 
 
 - (void)dealloc {
+	[payment release];
     [super dealloc];
 }
 
 -(void)setPayment:(Payment *) newPayment {
 	[payment release];
-	payment = [newPayment retain];
+	payment = [[[Payment alloc] init] retain];
+	if (nil != newPayment) {
+		payment.person = newPayment.person;
+		payment.currency = newPayment.currency;
+		payment.paymentType = newPayment.paymentType;
+		payment.amount = newPayment.amount;
+		payment.date = newPayment.date;
+	}
 	[editTable reloadData];
 }
 
@@ -145,6 +157,7 @@
 	NSLog(@"edit cell: {%d}", row);
 	DateViewController *dateSelectController;
 	SelectionListViewController *listSelectController;
+	Event *event = [self.getCurrentEvent retain];
 	
 	switch (row) {
 		case 0: // case kPersonNameIndex
@@ -152,6 +165,8 @@
             listSelectController.delegate = self;
             listSelectController.list = event.persons;
 			listSelectController.propertySelector = @selector(name);
+			listSelectController.indexTag = row;
+			listSelectController.initialSelection = [event.persons indexOfObject: payment.person ];
 			[self presentModalViewController: listSelectController animated: TRUE];
             [listSelectController release];
 
@@ -161,17 +176,22 @@
             listSelectController.delegate = self;
             listSelectController.list = event.paymentTypes;
 			listSelectController.propertySelector = @selector(name);
+			listSelectController.indexTag = row;
+			listSelectController.initialSelection = [event.paymentTypes indexOfObject: payment.paymentType ];
 			[self presentModalViewController: listSelectController animated: TRUE];
             [listSelectController release];
 
 			break;
 		case 2: // case kAmountIndex
+			// textField insode handles since it's enabled -> no action needed here
 			break;
 		case 3: // case kCurrencyIndex
             listSelectController = [[SelectionListViewController alloc] init];
             listSelectController.delegate = self;
             listSelectController.list = event.currencies;
 			listSelectController.propertySelector = @selector(name);
+			listSelectController.indexTag = row;
+			listSelectController.initialSelection = [event.currencies indexOfObject: payment.currency ];
 			[self presentModalViewController: listSelectController animated: TRUE];
             [listSelectController release];
 
@@ -180,12 +200,16 @@
 			dateSelectController = [[DateViewController alloc] init];
 			dateSelectController.delegate = self;
 			dateSelectController.date = payment.date;
+			listSelectController.indexTag = row;
 			[self presentModalViewController: dateSelectController animated: TRUE];
 			[dateSelectController release];
 			break;
 		default:
 			break;
 	}
+	
+	[event release];
+	
 	return nil;
 }
 
@@ -200,8 +224,45 @@
 
 #pragma mark -
 #pragma mark DateController Protocoll impl
-- (void)rowChosen:(NSInteger)row {
-	NSLog(@"row choosen clicked");
+- (void)rowChosen:(NSInteger)row indexTag:(NSUInteger)indexTag {
+	NSLog(@"row choosen clicked: %d", indexTag);
+	
+	Event *event = [self.getCurrentEvent retain];
+
+	switch (indexTag) {
+		case 0: // case kPersonNameIndex
+			payment.person = [event.persons objectAtIndex: row];
+			break;
+		case 1: // case kPaymentTypeIndex
+			payment.paymentType = [event.paymentTypes objectAtIndex: row];
+			break;
+		case 2: // case kAmountIndex
+			// textField insode handles - never comes here
+			break;
+		case 3: // case kCurrencyIndex
+			payment.currency = [event.currencies objectAtIndex: row];
+			break;
+		case 4: // case kDateIndex
+			// is date selector - nver comes here
+			break;
+		default:
+			break;
+	}
+	
+	[event release];
+	[editTable reloadData];
+}
+
+#pragma mark -
+#pragma mark Text Field Delegate Methods
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    payment.amount = [NSDecimalNumber decimalNumberWithString: textField.text];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)tf {
+	[tf resignFirstResponder];
+	return YES;
 }
 
 @end

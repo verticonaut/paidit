@@ -8,15 +8,20 @@
 
 #import "PaidItAppDelegate.h"
 #import "PaymentsViewController.h"
+#import "AddPaymentController.h"
 #import "Event.h"
 #import "Payment.h"
 
 
 @implementation PaymentsViewController
 
-@synthesize event;
 @synthesize payments;
 @synthesize currentPaymentIndexPath;
+
+- (void)paymentSaved:(Payment *)aPayment {
+	[payments addObject: [aPayment retain]];
+	[paymentsTable reloadData];	
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [self.payments count];
@@ -73,14 +78,9 @@
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	NSLog(@"clicked payment: {%d}", indexPath.row);
 	Payment *dummy = [payments objectAtIndex: indexPath.row ];
+	
 	[appDelegate paymentClicked: dummy];
 	return nil;
-}
-
-- (void)setEvent:(Event *)anEvent {
-	[event release];
-	event = anEvent;
-	[self setPayments: event.payments];
 }
 
 - (void)setPayments:(NSMutableArray *)newPayments {
@@ -90,8 +90,8 @@
 }
 
 -(IBAction)addPayment:(id)sender {
-	[addPaymentController setEvent: event];
 	[addPaymentController setPayment: nil];
+	[addPaymentController setDelegate: self];
 	[self presentModalViewController: addPaymentController animated:TRUE];
 }
 
@@ -109,12 +109,6 @@
         // Custom initialization
     }
     return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
 }
 */
 
@@ -172,6 +166,20 @@
 - (void)dealloc {
     [super dealloc];
 }
+
+- (void)viewWillAppear:(BOOL)animated 
+{
+	NSLog(@"payments will appear");
+	//	[self.parentViewController addSubview: self];
+	[paymentsTable reloadData];
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	NSLog(@"payments will disappear");
+	[super viewWillDisappear: animated];
+}
+
 
 
 @end

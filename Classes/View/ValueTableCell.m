@@ -5,27 +5,31 @@
 //  Created by Martin Schweizer on 27.02.09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
-
 #import "ValueTableCell.h"
 
 
 @implementation ValueTableCell
 
-@synthesize label, valueLabel;
+@synthesize label, textField;
 
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
+		// add label
 		label = [[UILabel alloc] initWithFrame: CGRectMake(15.0, 16.0, 120.0, 15.0)];
 		label.font = [UIFont boldSystemFontOfSize: 14];
 		label.text = @"LABEL to be set ...";
 		
 		[self.contentView addSubview: label ];
 
-		valueLabel = [[UILabel alloc] initWithFrame: CGRectMake(125.0, 16.0, 150.0, 15.0)];
-		valueLabel.font = [UIFont systemFontOfSize: 14];	
-		valueLabel.text = @"VALUE to be set ...";
+		// add textField
+		textField = [[UITextField alloc] initWithFrame: CGRectMake(125.0, 16.0, 150.0, 15.0)];
+		textField.placeholder = @"edit value ...";
+		textField.returnKeyType = UIReturnKeyDone;
+		textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+		textField.font = [UIFont systemFontOfSize: 14];	
+		textField.enabled = FALSE;
 		
-		[self.contentView addSubview: valueLabel ];
+		[self.contentView addSubview: textField ];
 	}
 	
     return self;
@@ -43,7 +47,7 @@
 	NSString *newLabel;
 	newLabel = [aLabel stringByAppendingString: @" :"];
 	label.text = newLabel;
-	valueLabel.text = value;
+	textField.text = value;
 
 	return self;
 }
@@ -56,7 +60,7 @@
 
 - (void)dealloc {
 	[label release];
-	[valueLabel release];
+	[textField release];
 
 	[super dealloc];
 }

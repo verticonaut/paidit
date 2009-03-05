@@ -17,6 +17,7 @@
 @synthesize window;
 @synthesize eventsController;
 @synthesize allEvents;
+@synthesize currentEvent;
 @synthesize paymentDetailController;
 
 - (void)createDefaultData {
@@ -36,7 +37,6 @@
 }
 
 - (Event *)getEventNamed:(NSString *)eventName {
-//	NSArray *payments = nil;
 	NSEnumerator *eventEnum = [allEvents objectEnumerator];
 	id event;
 	while (event = [eventEnum nextObject]) {
@@ -50,7 +50,8 @@
 
 -(void)eventClicked:(NSString *)eventName {
 	NSLog(@"event name: %@", eventName);
-	[paymentsController setEvent: [self getEventNamed: eventName]];
+	[self setCurrentEvent: [self getEventNamed: eventName]];
+	[paymentsController setPayments: currentEvent.payments];
 	[navController pushViewController: paymentsController animated: YES];
 }
 

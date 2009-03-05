@@ -13,6 +13,14 @@
 @implementation Payment
 @synthesize person, paymentType, amount, date, currency;
 
+- (id) init {
+	self = [super init];
+	
+	self.date = [NSDate date];
+	
+	return self;
+}
+
 - (id)initWithPerson:(Person*) aPerson paymentType:(PaymentType*) aPaymentType amount:(NSDecimalNumber*) anAmount currency:(Currency*) aCurrency
 {
 	self = [self init];
@@ -20,7 +28,6 @@
 	self.person = aPerson;
 	self.paymentType = aPaymentType;
 	self.amount = anAmount;
-	self.date = [NSDate date];
 	self.currency = aCurrency;
 	
 	return self;
