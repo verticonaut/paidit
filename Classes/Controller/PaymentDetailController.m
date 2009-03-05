@@ -50,7 +50,7 @@
 			break;
 //		case kCurrencyIndex:
 		case 3:
-			[cell setValue: self.payment.currency label: @"Currency" ];
+			[cell setValue: self.payment.currency.name label: @"Currency" ];
 			break;
 //		case kDateIndex:
 		case 4:
@@ -125,7 +125,6 @@
 //	[self.parentViewController addSubview: self];
     [super viewWillAppear:animated];
 }
-
 
 
 @end

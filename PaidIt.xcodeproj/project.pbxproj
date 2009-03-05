@@ -18,6 +18,8 @@
 		5BB950F70F52A6E900E9B31F /* AddPayment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB950F60F52A6E900E9B31F /* AddPayment.xib */; };
 		5BC37D8E0F497924003D08DC /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC37D8D0F497924003D08DC /* EventsViewController.xib */; };
 		5BC37F1F0F49943C003D08DC /* Payments.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC37F1E0F49943C003D08DC /* Payments.xib */; };
+		5BC54C100F5F2692003CFBE9 /* SelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC54C0F0F5F2692003CFBE9 /* SelectionListViewController.m */; };
+		5BC54DFA0F5F4638003CFBE9 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC54DF90F5F4638003CFBE9 /* Currency.m */; };
 		5BC5A9000F53FA7D0040CE83 /* PaymentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5A8FF0F53FA7D0040CE83 /* PaymentTableCell.xib */; };
 		5BDA45950F55E31600B7E253 /* PaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA45940F55E31600B7E253 /* PaymentCell.m */; };
 		5BDA45A50F55E35700B7E253 /* AddEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA459C0F55E35700B7E253 /* AddEventsViewController.m */; };
@@ -49,6 +51,10 @@
 		5BB950F60F52A6E900E9B31F /* AddPayment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPayment.xib; sourceTree = "<group>"; };
 		5BC37D8D0F497924003D08DC /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		5BC37F1E0F49943C003D08DC /* Payments.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Payments.xib; sourceTree = "<group>"; };
+		5BC54C0E0F5F2692003CFBE9 /* SelectionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionListViewController.h; path = Controller/components/SelectionListViewController.h; sourceTree = "<group>"; };
+		5BC54C0F0F5F2692003CFBE9 /* SelectionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectionListViewController.m; path = Controller/components/SelectionListViewController.m; sourceTree = "<group>"; };
+		5BC54DF80F5F4638003CFBE9 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Currency.h; path = Model/Currency.h; sourceTree = "<group>"; };
+		5BC54DF90F5F4638003CFBE9 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Currency.m; path = Model/Currency.m; sourceTree = "<group>"; };
 		5BC5A8FF0F53FA7D0040CE83 /* PaymentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentTableCell.xib; sourceTree = "<group>"; };
 		5BDA45930F55E31600B7E253 /* PaymentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentCell.h; path = View/PaymentCell.h; sourceTree = "<group>"; };
 		5BDA45940F55E31600B7E253 /* PaymentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentCell.m; path = View/PaymentCell.m; sourceTree = "<group>"; };
@@ -161,6 +167,8 @@
 			children = (
 				5B78E4140F5E941F004337D9 /* DateViewController.h */,
 				5B78E4150F5E941F004337D9 /* DateViewController.m */,
+				5BC54C0E0F5F2692003CFBE9 /* SelectionListViewController.h */,
+				5BC54C0F0F5F2692003CFBE9 /* SelectionListViewController.m */,
 			);
 			name = components;
 			sourceTree = "<group>";
@@ -176,6 +184,8 @@
 				5BDA45AF0F55E38100B7E253 /* PaymentType.m */,
 				5BDA45B00F55E38100B7E253 /* Person.h */,
 				5BDA45B10F55E38100B7E253 /* Person.m */,
+				5BC54DF80F5F4638003CFBE9 /* Currency.h */,
+				5BC54DF90F5F4638003CFBE9 /* Currency.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -282,6 +292,8 @@
 				5BF6B0EA0F58711D00D871E1 /* ValueTableCell.m in Sources */,
 				5BF511EC0F589FB100876DCB /* AddPaymentController.m in Sources */,
 				5B78E4160F5E941F004337D9 /* DateViewController.m in Sources */,
+				5BC54C100F5F2692003CFBE9 /* SelectionListViewController.m in Sources */,
+				5BC54DFA0F5F4638003CFBE9 /* Currency.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,7 +36,7 @@
 	
 	// NEW
 	UINavigationBar *navBar;
-	navBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 40)];
+	navBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
 	UINavigationItem *navItem; 
 	navItem = [ [ UINavigationItem alloc ] initWithTitle:@"Select Date" ];
 	[navBar pushNavigationItem: navItem];

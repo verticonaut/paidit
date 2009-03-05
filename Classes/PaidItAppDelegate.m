@@ -35,13 +35,13 @@
 	[self createDefaultData];
 }
 
-- (NSArray *)paymentsForEventNamed:(NSString *)eventName {
+- (Event *)getEventNamed:(NSString *)eventName {
 //	NSArray *payments = nil;
 	NSEnumerator *eventEnum = [allEvents objectEnumerator];
 	id event;
 	while (event = [eventEnum nextObject]) {
 		if ([event name] == eventName) {
-			return [event payments];
+			return event;
 		}
 	}
 
@@ -50,7 +50,7 @@
 
 -(void)eventClicked:(NSString *)eventName {
 	NSLog(@"event name: %@", eventName);
-	paymentsController.payments = [self paymentsForEventNamed: eventName];
+	[paymentsController setEvent: [self getEventNamed: eventName]];
 	[navController pushViewController: paymentsController animated: YES];
 }
 

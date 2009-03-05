@@ -7,12 +7,13 @@
 //
 
 #import "Payment.h"
+#import "Currency.h"
 
 
 @implementation Payment
 @synthesize person, paymentType, amount, date, currency;
 
-- (id)initWithPerson:(Person*) aPerson paymentType:(PaymentType*) aPaymentType amount:(NSDecimalNumber*) anAmount
+- (id)initWithPerson:(Person*) aPerson paymentType:(PaymentType*) aPaymentType amount:(NSDecimalNumber*) anAmount currency:(Currency*) aCurrency
 {
 	self = [self init];
 	
@@ -20,7 +21,7 @@
 	self.paymentType = aPaymentType;
 	self.amount = anAmount;
 	self.date = [NSDate date];
-	self.currency = @"curr";
+	self.currency = aCurrency;
 	
 	return self;
 }

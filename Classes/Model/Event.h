@@ -19,6 +19,7 @@
 	NSMutableArray*  payments;
 	NSMutableArray*	 persons;
 	NSMutableArray*	 paymentTypes;
+	NSMutableArray*	 currencies;
 }
 
 @property (readwrite, copy) NSString* name;
@@ -26,6 +27,7 @@
 @property (readwrite, assign) NSMutableArray* payments;
 @property (readwrite, assign) NSMutableArray* persons;
 @property (readwrite, assign) NSMutableArray* paymentTypes;
+@property (readwrite, assign) NSMutableArray* currencies;
 
 - (id)addPayment:(Payment*) payment;
 - (id)addPerson:(Person*) person;

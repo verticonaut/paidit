@@ -10,12 +10,16 @@
 #import "AddPaymentController.h"
 #import "ValueTableCell.h"
 #import "Payment.h"
+#import "SelectionListViewController.h"
 
 @class Payment;
 
 @implementation AddPaymentController
 
+@synthesize event;
 @synthesize payment;
+
+
 
 - (IBAction)save:(id)sender {
 	NSLog(@"save payment detail clicked");
@@ -38,6 +42,8 @@
 	{
 		cell = [[[ValueTableCell alloc] initWithFrame: CGRectZero reuseIdentifier: @"paymentDetailCell"] autorelease];
 	}
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+
 	
 	NSNumberFormatter *numberFormatter;
 	NSDateFormatter *dateFormatter;
@@ -57,10 +63,11 @@
 			[numberFormatter setNumberStyle: NSNumberFormatterDecimalStyle];
 			[numberFormatter setFormat:@"###.00"];
 			[cell setValue: [NSString stringWithFormat:@"%@", [numberFormatter stringFromNumber: self.payment.amount]] label: @"Amount" ];
+			
 			break;
 			//		case kCurrencyIndex:
 		case 3:
-			[cell setValue: self.payment.currency label: @"Currency" ];
+			[cell setValue: self.payment.currency.name label: @"Currency" ];
 			break;
 			//		case kDateIndex:
 		case 4:
@@ -136,27 +143,45 @@
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	NSUInteger row = [indexPath row];
 	NSLog(@"edit cell: {%d}", row);
-	DateViewController *controller;
+	DateViewController *dateSelectController;
+	SelectionListViewController *listSelectController;
+	
 	switch (row) {
-			//		case kPersonNameIndex:
-		case 0:
+		case 0: // case kPersonNameIndex
+            listSelectController = [[SelectionListViewController alloc] init];
+            listSelectController.delegate = self;
+            listSelectController.list = event.persons;
+			listSelectController.propertySelector = @selector(name);
+			[self presentModalViewController: listSelectController animated: TRUE];
+            [listSelectController release];
+
 			break;
-			//		case kPaymentTypeIndex:
-		case 1:
+		case 1: // case kPaymentTypeIndex
+            listSelectController = [[SelectionListViewController alloc] init];
+            listSelectController.delegate = self;
+            listSelectController.list = event.paymentTypes;
+			listSelectController.propertySelector = @selector(name);
+			[self presentModalViewController: listSelectController animated: TRUE];
+            [listSelectController release];
+
 			break;
-			//		case kAmountIndex:
-		case 2:
+		case 2: // case kAmountIndex
 			break;
-			//		case kCurrencyIndex:
-		case 3:
+		case 3: // case kCurrencyIndex
+            listSelectController = [[SelectionListViewController alloc] init];
+            listSelectController.delegate = self;
+            listSelectController.list = event.currencies;
+			listSelectController.propertySelector = @selector(name);
+			[self presentModalViewController: listSelectController animated: TRUE];
+            [listSelectController release];
+
 			break;
-			//		case kDateIndex:
-		case 4:
-			controller = [[DateViewController alloc] init];
-			controller.delegate = self;
-			controller.date = payment.date;
-			[self presentModalViewController:controller animated: TRUE];
-			[controller release];
+		case 4: // case kDateIndex
+			dateSelectController = [[DateViewController alloc] init];
+			dateSelectController.delegate = self;
+			dateSelectController.date = payment.date;
+			[self presentModalViewController: dateSelectController animated: TRUE];
+			[dateSelectController release];
 			break;
 		default:
 			break;
@@ -172,5 +197,11 @@
 	[editTable reloadData];
 }
 
+
+#pragma mark -
+#pragma mark DateController Protocoll impl
+- (void)rowChosen:(NSInteger)row {
+	NSLog(@"row choosen clicked");
+}
 
 @end

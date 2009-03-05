@@ -12,7 +12,7 @@
 
 @implementation Event
 
-@synthesize name, date, payments, persons, paymentTypes;
+@synthesize name, date, payments, persons, paymentTypes, currencies;
 
 #pragma mark Instantiation
 + (id)initWithName:(NSString *) eventName {
@@ -27,6 +27,7 @@
 	self.paymentTypes = [[NSMutableArray alloc] initWithObjects: nil];
 	self.persons = [[NSMutableArray alloc] initWithObjects: nil];
 	self.payments = [[NSMutableArray alloc] initWithObjects: nil];
+	self.currencies = [[NSMutableArray alloc] initWithObjects: nil];
 	
 	[self initData];
 	
@@ -63,6 +64,13 @@
 	return self;
 }
 
+- (id)addCurrency:(Currency*) currency
+{
+	[self.currencies addObject: currency];
+	
+	return self;
+}
+
 - (Event*)initData
 {
 	// START: test only
@@ -73,7 +81,7 @@
 	[peter release];
 	[muster release];
 
-	// define initial paymentType
+	// define initial paymentTypes
 	PaymentType *food = [[PaymentType alloc] initWithName: @"Food"];
 	PaymentType *gas = [[PaymentType alloc] initWithName: @"Gas"];
 	[self addPaymentType: food];
@@ -81,23 +89,35 @@
 	[food release];
 	[gas release];
 	
-	// define initial payments
-	[self addPayment: [[Payment alloc] initWithPerson: peter paymentType: food amount: [NSDecimalNumber decimalNumberWithString: @"11.5"]]];
-	[self addPayment: [[Payment alloc] initWithPerson: peter paymentType: gas amount: [NSDecimalNumber decimalNumberWithString: @"22.0"]]];
-	[self addPayment: [[Payment alloc] initWithPerson: muster paymentType: food amount: [NSDecimalNumber decimalNumberWithString: @"99.0"]]];
-	[self addPayment: [[Payment alloc] initWithPerson: muster paymentType: muster amount: [NSDecimalNumber decimalNumberWithString: @"101.0"]]];
+	// define initial currencies
+	Currency *chf = [[Currency alloc] initWithName: @"CHF"];
+	[self addCurrency: chf];
+	Currency *eur = [[Currency alloc] initWithName: @"EUR"];
+	[self addCurrency: eur];
+	Currency *usd = [[Currency alloc] initWithName: @"USD"];
+	[self addCurrency: usd];
 
+	// define initial payments
+	[self addPayment: [[Payment alloc] initWithPerson: peter paymentType: food amount: [NSDecimalNumber decimalNumberWithString: @"11.5"] currency: chf]];
+	[self addPayment: [[Payment alloc] initWithPerson: peter paymentType: gas amount: [NSDecimalNumber decimalNumberWithString: @"22.0"] currency: chf]];
+	[self addPayment: [[Payment alloc] initWithPerson: muster paymentType: food amount: [NSDecimalNumber decimalNumberWithString: @"99.0"] currency: eur]];
+	[self addPayment: [[Payment alloc] initWithPerson: muster paymentType: gas amount: [NSDecimalNumber decimalNumberWithString: @"101.0"] currency: usd]];
+
+	[chf release];
+	[eur release];
+	[usd release];
+	
 	return self;
 }
 
 
 - (void)dealloc
 {
-	[self.name release];
-	[self.description release];
-	[self.date release];
-	[self.payments release];
-	[self.persons release];
+	[name release];
+	[date release];
+	[payments release];
+	[persons release];
+	[currencies release];	
 
 	[super dealloc];
 }

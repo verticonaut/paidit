@@ -8,12 +8,15 @@
 
 #import "PaidItAppDelegate.h"
 #import "PaymentsViewController.h"
+#import "Event.h"
 #import "Payment.h"
 
 
 @implementation PaymentsViewController
 
-@synthesize payments, currentPaymentIndexPath;
+@synthesize event;
+@synthesize payments;
+@synthesize currentPaymentIndexPath;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [self.payments count];
@@ -58,7 +61,7 @@
 	label.text = payment.paymentType.name;
 
 	label = (UILabel *)[cell.contentView viewWithTag: kLabelCurrency ];	
-	label.text = payment.currency;
+	label.text = payment.currency.name;
 	
 	//	cell.text = [[self.payments objectAtIndex:indexPath.row] desc];
 
@@ -74,13 +77,20 @@
 	return nil;
 }
 
-- (void)setPayments:(NSArray *)newPayments {
+- (void)setEvent:(Event *)anEvent {
+	[event release];
+	event = anEvent;
+	[self setPayments: event.payments];
+}
+
+- (void)setPayments:(NSMutableArray *)newPayments {
 	[payments release];
 	payments = [newPayments retain];
 	[paymentsTable reloadData];
 }
 
 -(IBAction)addPayment:(id)sender {
+	[addPaymentController setEvent: event];
 	[addPaymentController setPayment: nil];
 	[self presentModalViewController: addPaymentController animated:TRUE];
 }

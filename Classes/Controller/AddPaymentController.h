@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import	"Event.h"
 #import	"Payment.h"
 #import	"PaidItAppDelegate.h"
 
@@ -19,16 +20,20 @@
 
 
 @interface AddPaymentController : UIViewController <UITableViewDataSource, UITableViewDelegate, DateViewDelegate> {
+	Event *event;
 	Payment *payment;
 	
 	IBOutlet UITableView *editTable;
 	IBOutlet PaidItAppDelegate *appDelegate;
 }
 
+@property (readwrite, retain) Event* event;
 @property (readwrite, retain) Payment* payment;
 
 - (IBAction)save:(id)sender;
 - (IBAction)cancel:(id)sender;
+
+- (void)rowChosen: (NSInteger)row;
 
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import	"Event.h"
 #import	"Payment.h"
 
 @class AddPaymentController;
@@ -28,6 +29,5 @@
 }
 
 @property (readwrite, retain) Payment* payment;
-
 
 @end
