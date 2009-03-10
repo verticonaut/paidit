@@ -217,7 +217,6 @@
 			dateSelectController = [[DateViewController alloc] init];
 			dateSelectController.delegate = self;
 			dateSelectController.date = payment.date;
-			listSelectController.indexTag = row;
 			[self presentModalViewController: dateSelectController animated: TRUE];
 			[dateSelectController release];
 			break;

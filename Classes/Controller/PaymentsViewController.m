@@ -142,6 +142,7 @@
 									  cancelButtonTitle: @"Cancel"
 									  destructiveButtonTitle: @"Delete payment"
 									  otherButtonTitles: nil];
+		
 		[actionSheet showInView: [self view]];
     }
 }
@@ -150,7 +151,7 @@
 	if (0 == buttonIndex) {
 		// delete button pressed
 		[payments removeObjectAtIndex: currentPaymentIndexPath.row];
-		[paymentsTable deleteRowsAtIndexPaths:[NSArray arrayWithObject: currentPaymentIndexPath] withRowAnimation:UITableViewRowAnimationFade];  
+		[paymentsTable deleteRowsAtIndexPaths:[NSArray arrayWithObject: currentPaymentIndexPath] withRowAnimation: UITableViewRowAnimationFade];  
 	}
 	[currentPaymentIndexPath release];
 	[actionSheet release];

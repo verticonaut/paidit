@@ -36,12 +36,11 @@
 	
 	// NEW
 	UINavigationBar *navBar;
-	navBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
+	navBar = [[[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)] autorelease];
 	UINavigationItem *navItem; 
-	navItem = [ [ UINavigationItem alloc ] initWithTitle:@"Select Date" ];
+	navItem = [[[UINavigationItem alloc] initWithTitle:@"Select Date" ] autorelease];
 	[navBar pushNavigationItem: navItem];
 	[self.view addSubview: navBar];
-	[navBar release];
 	// NEW END
 
     UITableView *theTableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0, 107.0, 320.0, 480.0) style:UITableViewStyleGrouped];
@@ -73,8 +72,6 @@
                                    action:@selector(save)];
     navItem.rightBarButtonItem = saveButton;
     [saveButton release];
-	
-	[navItem release];
     
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
