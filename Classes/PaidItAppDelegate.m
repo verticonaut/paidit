@@ -54,8 +54,9 @@
 	[self setCurrentEvent: [self getEventNamed: eventName]];
 	[paymentsController setPayments: currentEvent.payments];
 	
-	[navController pushViewController: paymentsController animated: YES];
-//TODO	[navController pushViewController: paymentsBaseController animated: YES];
+//TODO	[navController pushViewController: paymentsController animated: YES];
+	paymentsBaseController.viewControllers = [NSArray arrayWithObjects: paymentsController, paymentDetailController, nil];
+	[navController pushViewController: paymentsBaseController animated: YES];
 }
 
 -(void)paymentClicked:(Payment *) payment {

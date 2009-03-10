@@ -10,9 +10,9 @@
 	};
 	1D3623250D0F684500981E51 /* PaidItAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {900, 1408}}";
-			sepNavSelRange = "{1508, 0}";
-			sepNavVisRange = "{1231, 1135}";
+			sepNavIntBoundsRect = "{{0, 0}, {900, 1422}}";
+			sepNavSelRange = "{2145, 5}";
+			sepNavVisRange = "{1230, 1248}";
 			sepNavWindowFrame = "{{38, 66}, {872, 786}}";
 		};
 	};
@@ -35,7 +35,7 @@
 			5BBA55FC0F3B886900CF98E0 /* Event.m:6 */,
 			5BC37D650F4973FB003D08DC /* Event.m:31 */,
 			5BC37D670F497405003D08DC /* Event.m:33 */,
-			5B100A630F4DF53B003318B7 /* PaidItAppDelegate.m:67 */,
+			5B100A630F4DF53B003318B7 /* PaidItAppDelegate.m:68 */,
 			5B100A7E0F4DF5B9003318B7 /* AddEventsViewController.m:41 */,
 			5B100A890F4DF650003318B7 /* AddEventsViewController.m:42 */,
 			5B100A8B0F4DF671003318B7 /* EventsViewController.m:49 */,
@@ -54,15 +54,15 @@
 			5B4A8C5B0F535E1F002584CF /* PaymentsViewController.m:29 */,
 			5B4A8C620F535EFF002584CF /* EventsViewController.m:26 */,
 			5BC5A8700F53F48A0040CE83 /* EventsViewController.m:114 */,
-			5BC5A8770F53F4BB0040CE83 /* PaidItAppDelegate.m:72 */,
+			5BC5A8770F53F4BB0040CE83 /* PaidItAppDelegate.m:73 */,
 			5BC5A8870F53F56E0040CE83 /* EventsViewController.m:114 */,
 			5BC5A9120F53FE5C0040CE83 /* PaymentsViewController.m:35 */,
 			5BF6B1BC0F58860700D871E1 /* PaymentsViewController.m:82 */,
-			5BF6B1C40F58862400D871E1 /* PaidItAppDelegate.m:62 */,
+			5BF6B1C40F58862400D871E1 /* PaidItAppDelegate.m:63 */,
 			5BF6B1D30F5887BD00D871E1 /* PaymentsViewController.m:95 */,
 			5BF6B1D50F5887CC00D871E1 /* PaymentsViewController.m:87 */,
 			5BF6B2000F588A9A00D871E1 /* PaymentsViewController.m:119 */,
-			5BF5122A0F58A2AA00876DCB /* PaidItAppDelegate.m:63 */,
+			5BF5122A0F58A2AA00876DCB /* PaidItAppDelegate.m:64 */,
 			5BF512320F58A32200876DCB /* PaymentDetailController.m:26 */,
 			5BF5123A0F58A36D00876DCB /* PaymentDetailController.m:22 */,
 			5B6964E80F58A77500E8E56D /* ValueTableCell.m:49 */,
@@ -86,7 +86,7 @@
 			5BCB1ED80F602E6900E094A6 /* PaymentDetailController.m:66 */,
 			5BBF00EE0F65CA8B002CAB3A /* AddPaymentController.m:283 */,
 			5BBF00F00F65CA8C002CAB3A /* AddPaymentController.m:291 */,
-			5BB09BA70F65E64700D93015 /* PaidItAppDelegate.m:58 */,
+			5BB09BA70F65E64700D93015 /* PaidItAppDelegate.m:59 */,
 		);
 		codeSenseManager = 5BBA55DF0F3B7EB400CF98E0 /* Code sense */;
 		executables = (
@@ -153,8 +153,8 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 258337667;
-			PBXWorkspaceStateSaveDate = 258337667;
+			PBXPerProjectTemplateStateSaveDate = 258364057;
+			PBXWorkspaceStateSaveDate = 258364057;
 		};
 		perUserProjectItems = {
 			5B717ECE0F55E504004A17F2 /* PBXTextBookmark */ = 5B717ECE0F55E504004A17F2 /* PBXTextBookmark */;
@@ -174,7 +174,6 @@
 			5BB09BA90F65E64A00D93015 /* PBXTextBookmark */ = 5BB09BA90F65E64A00D93015 /* PBXTextBookmark */;
 			5BB09BE10F65E85A00D93015 /* PBXTextBookmark */ = 5BB09BE10F65E85A00D93015 /* PBXTextBookmark */;
 			5BB09BE20F65E85A00D93015 /* PBXTextBookmark */ = 5BB09BE20F65E85A00D93015 /* PBXTextBookmark */;
-			5BB09BF70F65EB6600D93015 /* PBXTextBookmark */ = 5BB09BF70F65EB6600D93015 /* PBXTextBookmark */;
 			5BB09BF80F65EB6600D93015 /* PBXTextBookmark */ = 5BB09BF80F65EB6600D93015 /* PBXTextBookmark */;
 			5BB09C450F65EB8F00D93015 /* PBXTextBookmark */ = 5BB09C450F65EB8F00D93015 /* PBXTextBookmark */;
 			5BB09C460F65EB8F00D93015 /* PBXTextBookmark */ = 5BB09C460F65EB8F00D93015 /* PBXTextBookmark */;
@@ -228,6 +227,7 @@
 			5BF6B1670F58857900D871E1 /* PBXTextBookmark */ = 5BF6B1670F58857900D871E1 /* PBXTextBookmark */;
 			5BF6B1680F58857900D871E1 /* PBXTextBookmark */ = 5BF6B1680F58857900D871E1 /* PBXTextBookmark */;
 			5BF6B1AD0F58857900D871E1 /* PBXTextBookmark */ = 5BF6B1AD0F58857900D871E1 /* PBXTextBookmark */;
+			5BFB1AA00F665B9B00B8DF73 /* PBXTextBookmark */ = 5BFB1AA00F665B9B00B8DF73 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 5BBA55DE0F3B7EB400CF98E0 /* Source Control */;
 		userBuildSettings = {
@@ -248,7 +248,7 @@
 			sepNavVisRange = "{0, 181}";
 		};
 	};
-	5B100A630F4DF53B003318B7 /* PaidItAppDelegate.m:67 */ = {
+	5B100A630F4DF53B003318B7 /* PaidItAppDelegate.m:68 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -260,9 +260,9 @@
 		functionName = "-addNewEventNamed:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 67;
+		lineNumber = 68;
 		location = PaidIt;
-		modificationTime = 258337681.68219;
+		modificationTime = 258366172.787971;
 		state = 2;
 	};
 	5B100A7E0F4DF5B9003318B7 /* AddEventsViewController.m:41 */ = {
@@ -279,7 +279,7 @@
 		ignoreCount = 0;
 		lineNumber = 41;
 		location = PaidIt;
-		modificationTime = 258337681.682262;
+		modificationTime = 258366172.788068;
 		state = 2;
 	};
 	5B100A890F4DF650003318B7 /* AddEventsViewController.m:42 */ = {
@@ -296,7 +296,7 @@
 		ignoreCount = 0;
 		lineNumber = 42;
 		location = PaidIt;
-		modificationTime = 258337681.682275;
+		modificationTime = 258366172.788079;
 		state = 2;
 	};
 	5B100A8B0F4DF671003318B7 /* EventsViewController.m:49 */ = {
@@ -313,7 +313,7 @@
 		ignoreCount = 0;
 		lineNumber = 49;
 		location = PaidIt;
-		modificationTime = 258337681.682283;
+		modificationTime = 258366172.788087;
 		state = 2;
 	};
 	5B100A8D0F4DF671003318B7 /* EventsViewController.m:50 */ = {
@@ -330,7 +330,7 @@
 		ignoreCount = 0;
 		lineNumber = 50;
 		location = PaidIt;
-		modificationTime = 258337681.682289;
+		modificationTime = 258366172.788093;
 		state = 2;
 	};
 	5B100B560F4E06E6003318B7 /* AddEventsViewController.m:54 */ = {
@@ -347,7 +347,7 @@
 		ignoreCount = 0;
 		lineNumber = 54;
 		location = PaidIt;
-		modificationTime = 258337681.682295;
+		modificationTime = 258366172.788101;
 		state = 2;
 	};
 	5B100B650F4E0792003318B7 /* AddEventsViewController.m:58 */ = {
@@ -364,7 +364,7 @@
 		ignoreCount = 0;
 		lineNumber = 58;
 		location = PaidIt;
-		modificationTime = 258337681.6823;
+		modificationTime = 258366172.788108;
 		state = 2;
 	};
 	5B100BBA0F4E0B30003318B7 /* AddEventsViewController.m:49 */ = {
@@ -381,7 +381,7 @@
 		ignoreCount = 0;
 		lineNumber = 49;
 		location = PaidIt;
-		modificationTime = 258337681.682311;
+		modificationTime = 258366172.788117;
 		state = 2;
 	};
 	5B100BCC0F4E0C61003318B7 /* EventsViewController.m:19 */ = {
@@ -398,7 +398,7 @@
 		ignoreCount = 0;
 		lineNumber = 19;
 		location = PaidIt;
-		modificationTime = 258337681.682323;
+		modificationTime = 258366172.788125;
 		state = 2;
 	};
 	5B100BF10F4E0D8C003318B7 /* EventsViewController.m:23 */ = {
@@ -415,7 +415,7 @@
 		ignoreCount = 0;
 		lineNumber = 23;
 		location = PaidIt;
-		modificationTime = 258337681.682334;
+		modificationTime = 258366172.788131;
 		state = 2;
 	};
 	5B4A8C5B0F535E1F002584CF /* PaymentsViewController.m:29 */ = {
@@ -432,7 +432,7 @@
 		ignoreCount = 0;
 		lineNumber = 29;
 		location = PaidIt;
-		modificationTime = 258337681.682483;
+		modificationTime = 258366172.78818;
 		state = 2;
 	};
 	5B4A8C620F535EFF002584CF /* EventsViewController.m:26 */ = {
@@ -449,7 +449,7 @@
 		ignoreCount = 0;
 		lineNumber = 26;
 		location = PaidIt;
-		modificationTime = 258337681.68249;
+		modificationTime = 258366172.788186;
 		state = 2;
 	};
 	5B6964E80F58A77500E8E56D /* ValueTableCell.m:49 */ = {
@@ -466,7 +466,7 @@
 		ignoreCount = 0;
 		lineNumber = 49;
 		location = PaidIt;
-		modificationTime = 258337681.682717;
+		modificationTime = 258366172.788471;
 		state = 2;
 	};
 	5B6964EA0F58A77E00E8E56D /* ValueTableCell.m:56 */ = {
@@ -483,7 +483,7 @@
 		ignoreCount = 0;
 		lineNumber = 56;
 		location = PaidIt;
-		modificationTime = 258337681.682732;
+		modificationTime = 258366172.788479;
 		state = 2;
 	};
 	5B69655E0F58AFF000E8E56D /* AddPaymentController.m:126 */ = {
@@ -500,7 +500,7 @@
 		ignoreCount = 0;
 		lineNumber = 126;
 		location = PaidIt;
-		modificationTime = 258337681.682744;
+		modificationTime = 258366172.788484;
 		state = 2;
 	};
 	5B717ECE0F55E504004A17F2 /* PBXTextBookmark */ = {
@@ -673,7 +673,7 @@
 		ignoreCount = 0;
 		lineNumber = 241;
 		location = PaidIt;
-		modificationTime = 258337681.682754;
+		modificationTime = 258366172.78849;
 		state = 2;
 	};
 	5B78E5200F5EA21E004337D9 /* AddPaymentController.m:222 */ = {
@@ -690,10 +690,10 @@
 		ignoreCount = 0;
 		lineNumber = 222;
 		location = PaidIt;
-		modificationTime = 258337681.682762;
+		modificationTime = 258366172.788495;
 		state = 2;
 	};
-	5BB09BA70F65E64700D93015 /* PaidItAppDelegate.m:58 */ = {
+	5BB09BA70F65E64700D93015 /* PaidItAppDelegate.m:59 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -705,10 +705,10 @@
 		functionName = "-eventClicked:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 58;
+		lineNumber = 59;
 		location = PaidIt;
-		modificationTime = 258337684.759649;
-		state = 1;
+		modificationTime = 258366180.856435;
+		state = 2;
 	};
 	5BB09BA90F65E64A00D93015 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -739,16 +739,6 @@
 		rType = 0;
 		vrLen = 1164;
 		vrLoc = 2559;
-	};
-	5BB09BF70F65EB6600D93015 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* PaidItAppDelegate.m */;
-		name = "PaidItAppDelegate.m: 75";
-		rLen = 0;
-		rLoc = 2132;
-		rType = 0;
-		vrLen = 931;
-		vrLoc = 1431;
 	};
 	5BB09BF80F65EB6600D93015 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -785,7 +775,7 @@
 		fRef = 1D3623250D0F684500981E51 /* PaidItAppDelegate.m */;
 		name = "PaidItAppDelegate.m: 58";
 		rLen = 0;
-		rLoc = 1508;
+		rLoc = 1628;
 		rType = 0;
 		vrLen = 1086;
 		vrLoc = 1275;
@@ -840,7 +830,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 7;
-		modificationTime = 258337681.682454;
+		modificationTime = 258366172.788147;
 		state = 2;
 	};
 	5BBA55D80F3B7E9E00CF98E0 /* PaidIt */ = {
@@ -903,7 +893,7 @@
 		ignoreCount = 0;
 		lineNumber = 9;
 		location = PaidIt;
-		modificationTime = 258337681.682129;
+		modificationTime = 258366172.787932;
 		state = 2;
 	};
 	5BBA55FC0F3B886900CF98E0 /* Event.m:6 */ = {
@@ -918,7 +908,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 6;
-		modificationTime = 258337681.682155;
+		modificationTime = 258366172.787951;
 		state = 2;
 	};
 	5BBF00590F65BA4A002CAB3A /* PBXTextBookmark */ = {
@@ -986,7 +976,7 @@
 		ignoreCount = 0;
 		lineNumber = 283;
 		location = PaidIt;
-		modificationTime = 258337681.682944;
+		modificationTime = 258366172.788672;
 		state = 1;
 	};
 	5BBF00F00F65CA8C002CAB3A /* AddPaymentController.m:291 */ = {
@@ -1003,7 +993,7 @@
 		ignoreCount = 0;
 		lineNumber = 291;
 		location = PaidIt;
-		modificationTime = 258337681.682959;
+		modificationTime = 258366172.788679;
 		state = 1;
 	};
 	5BBF00F10F65CA8E002CAB3A /* PBXTextBookmark */ = {
@@ -1096,7 +1086,7 @@
 		ignoreCount = 0;
 		lineNumber = 31;
 		location = PaidIt;
-		modificationTime = 258337681.682167;
+		modificationTime = 258366172.78796;
 		state = 2;
 	};
 	5BC37D670F497405003D08DC /* Event.m:33 */ = {
@@ -1113,7 +1103,7 @@
 		ignoreCount = 0;
 		lineNumber = 33;
 		location = PaidIt;
-		modificationTime = 258337681.682178;
+		modificationTime = 258366172.787965;
 		state = 2;
 	};
 	5BC37D900F49793B003D08DC /* EventsViewController.m */ = {
@@ -1228,7 +1218,7 @@
 		ignoreCount = 0;
 		lineNumber = 85;
 		location = PaidIt;
-		modificationTime = 258337681.682768;
+		modificationTime = 258366172.7885;
 		state = 2;
 	};
 	5BC54B9D0F5F2350003CFBE9 /* DateViewController.m:120 */ = {
@@ -1245,7 +1235,7 @@
 		ignoreCount = 0;
 		lineNumber = 120;
 		location = PaidIt;
-		modificationTime = 258337681.682773;
+		modificationTime = 258366172.788506;
 		state = 2;
 	};
 	5BC54BA20F5F2380003CFBE9 /* DateViewController.m:88 */ = {
@@ -1262,7 +1252,7 @@
 		ignoreCount = 0;
 		lineNumber = 88;
 		location = PaidIt;
-		modificationTime = 258337681.682787;
+		modificationTime = 258366172.788511;
 		state = 2;
 	};
 	5BC54BA60F5F23CA003CFBE9 /* AddPaymentController.m:219 */ = {
@@ -1279,7 +1269,7 @@
 		ignoreCount = 0;
 		lineNumber = 219;
 		location = PaidIt;
-		modificationTime = 258337681.682799;
+		modificationTime = 258366172.788516;
 		state = 2;
 	};
 	5BC54C0E0F5F2692003CFBE9 /* SelectionListViewController.h */ = {
@@ -1331,7 +1321,7 @@
 		ignoreCount = 0;
 		lineNumber = 192;
 		location = PaidIt;
-		modificationTime = 258337681.682805;
+		modificationTime = 258366172.788522;
 		state = 2;
 	};
 	5BC54C5F0F5F2BF8003CFBE9 /* AddPaymentController.m:179 */ = {
@@ -1348,7 +1338,7 @@
 		ignoreCount = 0;
 		lineNumber = 179;
 		location = PaidIt;
-		modificationTime = 258337681.682811;
+		modificationTime = 258366172.788531;
 		state = 2;
 	};
 	5BC54C7F0F5F2D08003CFBE9 /* SelectionListViewController.m:94 */ = {
@@ -1365,7 +1355,7 @@
 		ignoreCount = 0;
 		lineNumber = 94;
 		location = PaidIt;
-		modificationTime = 258337681.682822;
+		modificationTime = 258366172.788538;
 		state = 2;
 	};
 	5BC54CC90F5F3A86003CFBE9 /* PBXTextBookmark */ = {
@@ -1538,7 +1528,7 @@
 		ignoreCount = 0;
 		lineNumber = 42;
 		location = PaidIt;
-		modificationTime = 258337681.68246;
+		modificationTime = 258366172.788156;
 		state = 2;
 	};
 	5BC59C050F5342F7007C66F4 /* PaymentsViewController.m:87 */ = {
@@ -1555,7 +1545,7 @@
 		ignoreCount = 0;
 		lineNumber = 87;
 		location = PaidIt;
-		modificationTime = 258337681.682466;
+		modificationTime = 258366172.788167;
 		state = 2;
 	};
 	5BC59CAB0F535785007C66F4 /* PaymentsViewController.m:71 */ = {
@@ -1572,7 +1562,7 @@
 		ignoreCount = 0;
 		lineNumber = 71;
 		location = PaidIt;
-		modificationTime = 258337681.682472;
+		modificationTime = 258366172.788174;
 		state = 2;
 	};
 	5BC5A8700F53F48A0040CE83 /* EventsViewController.m:114 */ = {
@@ -1589,10 +1579,10 @@
 		ignoreCount = 0;
 		lineNumber = 114;
 		location = PaidIt;
-		modificationTime = 258337681.6825;
+		modificationTime = 258366172.788197;
 		state = 2;
 	};
-	5BC5A8770F53F4BB0040CE83 /* PaidItAppDelegate.m:72 */ = {
+	5BC5A8770F53F4BB0040CE83 /* PaidItAppDelegate.m:73 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1604,9 +1594,9 @@
 		functionName = "-deleteEventNamed:atIndex:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 72;
+		lineNumber = 73;
 		location = PaidIt;
-		modificationTime = 258337681.682511;
+		modificationTime = 258366172.788202;
 		state = 2;
 	};
 	5BC5A8870F53F56E0040CE83 /* EventsViewController.m:114 */ = {
@@ -1623,7 +1613,7 @@
 		ignoreCount = 0;
 		lineNumber = 114;
 		location = PaidIt;
-		modificationTime = 258337681.682547;
+		modificationTime = 258366172.788268;
 		state = 2;
 	};
 	5BC5A9120F53FE5C0040CE83 /* PaymentsViewController.m:35 */ = {
@@ -1640,7 +1630,7 @@
 		ignoreCount = 0;
 		lineNumber = 35;
 		location = PaidIt;
-		modificationTime = 258337681.68256;
+		modificationTime = 258366172.788279;
 		state = 2;
 	};
 	5BCB1C1F0F5FF90000E094A6 /* PBXTextBookmark */ = {
@@ -1677,7 +1667,7 @@
 		ignoreCount = 0;
 		lineNumber = 54;
 		location = PaidIt;
-		modificationTime = 258337681.682828;
+		modificationTime = 258366172.788547;
 		state = 2;
 	};
 	5BCB1D4B0F60107500E094A6 /* AddPaymentController.m:247 */ = {
@@ -1694,7 +1684,7 @@
 		ignoreCount = 0;
 		lineNumber = 247;
 		location = PaidIt;
-		modificationTime = 258337681.682877;
+		modificationTime = 258366172.788616;
 		state = 2;
 	};
 	5BCB1D580F60116700E094A6 /* SelectionListViewController.m:29 */ = {
@@ -1711,7 +1701,7 @@
 		ignoreCount = 0;
 		lineNumber = 29;
 		location = PaidIt;
-		modificationTime = 258337681.682885;
+		modificationTime = 258366172.788623;
 		state = 2;
 	};
 	5BCB1D5A0F60116800E094A6 /* SelectionListViewController.m:30 */ = {
@@ -1728,7 +1718,7 @@
 		ignoreCount = 0;
 		lineNumber = 30;
 		location = PaidIt;
-		modificationTime = 258337681.682899;
+		modificationTime = 258366172.788633;
 		state = 2;
 	};
 	5BCB1D880F60138B00E094A6 /* AddPaymentController.m:186 */ = {
@@ -1745,7 +1735,7 @@
 		ignoreCount = 0;
 		lineNumber = 186;
 		location = PaidIt;
-		modificationTime = 258337681.68291;
+		modificationTime = 258366172.788641;
 		state = 2;
 	};
 	5BCB1DBA0F60181B00E094A6 /* PBXTextBookmark */ = {
@@ -1792,7 +1782,7 @@
 		ignoreCount = 0;
 		lineNumber = 115;
 		location = PaidIt;
-		modificationTime = 258337681.682923;
+		modificationTime = 258366172.78865;
 		state = 2;
 	};
 	5BCB1E7F0F60267600E094A6 /* PaymentDetailController.m */ = {
@@ -1826,7 +1816,7 @@
 		ignoreCount = 0;
 		lineNumber = 66;
 		location = PaidIt;
-		modificationTime = 258337681.682933;
+		modificationTime = 258366172.788657;
 		state = 2;
 	};
 	5BDA45930F55E31600B7E253 /* PaymentCell.h */ = {
@@ -1970,7 +1960,7 @@
 		ignoreCount = 0;
 		lineNumber = 19;
 		location = PaidIt;
-		modificationTime = 258337681.682432;
+		modificationTime = 258366172.788136;
 		state = 2;
 	};
 	5BE7D9220F50A02100C576C8 /* Event.m:24 */ = {
@@ -1987,7 +1977,7 @@
 		ignoreCount = 0;
 		lineNumber = 24;
 		location = PaidIt;
-		modificationTime = 258337681.682448;
+		modificationTime = 258366172.788141;
 		state = 2;
 	};
 	5BF510C40F588B3A00876DCB /* PBXTextBookmark */ = {
@@ -2036,7 +2026,7 @@
 		vrLen = 714;
 		vrLoc = 0;
 	};
-	5BF5122A0F58A2AA00876DCB /* PaidItAppDelegate.m:63 */ = {
+	5BF5122A0F58A2AA00876DCB /* PaidItAppDelegate.m:64 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2048,9 +2038,9 @@
 		functionName = "-paymentClicked:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 63;
+		lineNumber = 64;
 		location = PaidIt;
-		modificationTime = 258337681.682647;
+		modificationTime = 258366172.788383;
 		state = 2;
 	};
 	5BF512320F58A32200876DCB /* PaymentDetailController.m:26 */ = {
@@ -2067,7 +2057,7 @@
 		ignoreCount = 0;
 		lineNumber = 26;
 		location = PaidIt;
-		modificationTime = 258337681.682696;
+		modificationTime = 258366172.788449;
 		state = 2;
 	};
 	5BF5123A0F58A36D00876DCB /* PaymentDetailController.m:22 */ = {
@@ -2084,7 +2074,7 @@
 		ignoreCount = 0;
 		lineNumber = 22;
 		location = PaidIt;
-		modificationTime = 258337681.682709;
+		modificationTime = 258366172.78846;
 		state = 2;
 	};
 	5BF6B0E80F58711D00D871E1 /* ValueTableCell.h */ = {
@@ -2157,10 +2147,10 @@
 		ignoreCount = 0;
 		lineNumber = 82;
 		location = PaidIt;
-		modificationTime = 258337681.682573;
+		modificationTime = 258366172.788287;
 		state = 2;
 	};
-	5BF6B1C40F58862400D871E1 /* PaidItAppDelegate.m:62 */ = {
+	5BF6B1C40F58862400D871E1 /* PaidItAppDelegate.m:63 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2172,9 +2162,9 @@
 		functionName = "-paymentClicked:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 62;
+		lineNumber = 63;
 		location = PaidIt;
-		modificationTime = 258337681.682579;
+		modificationTime = 258366172.788296;
 		state = 2;
 	};
 	5BF6B1D30F5887BD00D871E1 /* PaymentsViewController.m:95 */ = {
@@ -2191,7 +2181,7 @@
 		ignoreCount = 0;
 		lineNumber = 95;
 		location = PaidIt;
-		modificationTime = 258337681.682616;
+		modificationTime = 258366172.788361;
 		state = 2;
 	};
 	5BF6B1D50F5887CC00D871E1 /* PaymentsViewController.m:87 */ = {
@@ -2208,7 +2198,7 @@
 		ignoreCount = 0;
 		lineNumber = 87;
 		location = PaidIt;
-		modificationTime = 258337681.682627;
+		modificationTime = 258366172.788368;
 		state = 2;
 	};
 	5BF6B2000F588A9A00D871E1 /* PaymentsViewController.m:119 */ = {
@@ -2225,7 +2215,17 @@
 		ignoreCount = 0;
 		lineNumber = 119;
 		location = PaidIt;
-		modificationTime = 258337681.682639;
+		modificationTime = 258366172.788374;
 		state = 2;
+	};
+	5BFB1AA00F665B9B00B8DF73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* PaidItAppDelegate.m */;
+		name = "PaidItAppDelegate.m: 73";
+		rLen = 5;
+		rLoc = 2145;
+		rType = 0;
+		vrLen = 1247;
+		vrLoc = 1231;
 	};
 }
