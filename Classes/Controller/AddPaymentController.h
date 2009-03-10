@@ -30,12 +30,14 @@
 	
 	IBOutlet UITableView *editTable;
 	IBOutlet PaidItAppDelegate *appDelegate;
+	UITextField *textFieldBeingEdited;
 	
     id <PaymentEditorDelegate> delegate;
 }
 
 @property (readwrite, assign) Payment* payment;
 @property (nonatomic, assign) id <PaymentEditorDelegate> delegate;
+@property (nonatomic, retain) UITextField *textFieldBeingEdited;
 
 - (IBAction)save:(id)sender;
 - (IBAction)cancel:(id)sender;

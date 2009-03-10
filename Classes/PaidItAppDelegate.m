@@ -19,6 +19,7 @@
 @synthesize allEvents;
 @synthesize currentEvent;
 @synthesize paymentDetailController;
+@synthesize paymentsBaseController;
 
 - (void)createDefaultData {
 	self.allEvents = [NSMutableArray arrayWithObjects: [[Event initWithName: @"Rodellar"] retain], [[Event initWithName: @"Sardegna"] retain], nil];
@@ -52,7 +53,9 @@
 	NSLog(@"event name: %@", eventName);
 	[self setCurrentEvent: [self getEventNamed: eventName]];
 	[paymentsController setPayments: currentEvent.payments];
+	
 	[navController pushViewController: paymentsController animated: YES];
+//TODO	[navController pushViewController: paymentsBaseController animated: YES];
 }
 
 -(void)paymentClicked:(Payment *) payment {

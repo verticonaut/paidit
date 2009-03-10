@@ -16,6 +16,14 @@
 		5B78E4160F5E941F004337D9 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B78E4150F5E941F004337D9 /* DateViewController.m */; };
 		5BB5EBC50F4C5554001CCDCB /* AddEvent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5EBC40F4C5554001CCDCB /* AddEvent.xib */; };
 		5BB950F70F52A6E900E9B31F /* AddPayment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB950F60F52A6E900E9B31F /* AddPayment.xib */; };
+		5BBF01070F65CDC4002CAB3A /* CalculationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBF01060F65CDC4002CAB3A /* CalculationViewController.m */; };
+		5BBF01090F65CE95002CAB3A /* Calculation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBF01080F65CE95002CAB3A /* Calculation.xib */; };
+		5BBF01100F65D03C002CAB3A /* clockicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBF010B0F65D03C002CAB3A /* clockicon.png */; };
+		5BBF01110F65D03C002CAB3A /* dependenticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBF010C0F65D03C002CAB3A /* dependenticon.png */; };
+		5BBF01120F65D03C002CAB3A /* doubleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBF010D0F65D03C002CAB3A /* doubleicon.png */; };
+		5BBF01130F65D03C002CAB3A /* singleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBF010E0F65D03C002CAB3A /* singleicon.png */; };
+		5BBF01140F65D03C002CAB3A /* toolicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBF010F0F65D03C002CAB3A /* toolicon.png */; };
+		5BBF01290F65D187002CAB3A /* PaymentsBase.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBF01280F65D187002CAB3A /* PaymentsBase.xib */; };
 		5BC37D8E0F497924003D08DC /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC37D8D0F497924003D08DC /* EventsViewController.xib */; };
 		5BC37F1F0F49943C003D08DC /* Payments.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC37F1E0F49943C003D08DC /* Payments.xib */; };
 		5BC54C100F5F2692003CFBE9 /* SelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC54C0F0F5F2692003CFBE9 /* SelectionListViewController.m */; };
@@ -49,6 +57,15 @@
 		5B78E4150F5E941F004337D9 /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateViewController.m; path = Controller/components/DateViewController.m; sourceTree = "<group>"; };
 		5BB5EBC40F4C5554001CCDCB /* AddEvent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEvent.xib; sourceTree = "<group>"; };
 		5BB950F60F52A6E900E9B31F /* AddPayment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPayment.xib; sourceTree = "<group>"; };
+		5BBF01050F65CDC4002CAB3A /* CalculationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculationViewController.h; path = Controller/CalculationViewController.h; sourceTree = "<group>"; };
+		5BBF01060F65CDC4002CAB3A /* CalculationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalculationViewController.m; path = Controller/CalculationViewController.m; sourceTree = "<group>"; };
+		5BBF01080F65CE95002CAB3A /* Calculation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Calculation.xib; sourceTree = "<group>"; };
+		5BBF010B0F65D03C002CAB3A /* clockicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clockicon.png; path = "Tab Bar Icons/clockicon.png"; sourceTree = "<group>"; };
+		5BBF010C0F65D03C002CAB3A /* dependenticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dependenticon.png; path = "Tab Bar Icons/dependenticon.png"; sourceTree = "<group>"; };
+		5BBF010D0F65D03C002CAB3A /* doubleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doubleicon.png; path = "Tab Bar Icons/doubleicon.png"; sourceTree = "<group>"; };
+		5BBF010E0F65D03C002CAB3A /* singleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = singleicon.png; path = "Tab Bar Icons/singleicon.png"; sourceTree = "<group>"; };
+		5BBF010F0F65D03C002CAB3A /* toolicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolicon.png; path = "Tab Bar Icons/toolicon.png"; sourceTree = "<group>"; };
+		5BBF01280F65D187002CAB3A /* PaymentsBase.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsBase.xib; sourceTree = "<group>"; };
 		5BC37D8D0F497924003D08DC /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		5BC37F1E0F49943C003D08DC /* Payments.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Payments.xib; sourceTree = "<group>"; };
 		5BC54C0E0F5F2692003CFBE9 /* SelectionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionListViewController.h; path = Controller/components/SelectionListViewController.h; sourceTree = "<group>"; };
@@ -140,6 +157,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5BBF010B0F65D03C002CAB3A /* clockicon.png */,
+				5BBF010C0F65D03C002CAB3A /* dependenticon.png */,
+				5BBF010D0F65D03C002CAB3A /* doubleicon.png */,
+				5BBF010E0F65D03C002CAB3A /* singleicon.png */,
+				5BBF010F0F65D03C002CAB3A /* toolicon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				5BC37D8D0F497924003D08DC /* EventsViewController.xib */,
@@ -148,6 +170,8 @@
 				5BB950F60F52A6E900E9B31F /* AddPayment.xib */,
 				5BC5A8FF0F53FA7D0040CE83 /* PaymentTableCell.xib */,
 				5BF511E10F589F2F00876DCB /* PaymentDetail.xib */,
+				5BBF01080F65CE95002CAB3A /* Calculation.xib */,
+				5BBF01280F65D187002CAB3A /* PaymentsBase.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -204,6 +228,8 @@
 				5BDA45A40F55E35700B7E253 /* PaymentsViewController.m */,
 				5BF511EA0F589FB100876DCB /* AddPaymentController.h */,
 				5BF511EB0F589FB100876DCB /* AddPaymentController.m */,
+				5BBF01050F65CDC4002CAB3A /* CalculationViewController.h */,
+				5BBF01060F65CDC4002CAB3A /* CalculationViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -268,6 +294,13 @@
 				5BB950F70F52A6E900E9B31F /* AddPayment.xib in Resources */,
 				5BC5A9000F53FA7D0040CE83 /* PaymentTableCell.xib in Resources */,
 				5BF511E20F589F2F00876DCB /* PaymentDetail.xib in Resources */,
+				5BBF01090F65CE95002CAB3A /* Calculation.xib in Resources */,
+				5BBF01100F65D03C002CAB3A /* clockicon.png in Resources */,
+				5BBF01110F65D03C002CAB3A /* dependenticon.png in Resources */,
+				5BBF01120F65D03C002CAB3A /* doubleicon.png in Resources */,
+				5BBF01130F65D03C002CAB3A /* singleicon.png in Resources */,
+				5BBF01140F65D03C002CAB3A /* toolicon.png in Resources */,
+				5BBF01290F65D187002CAB3A /* PaymentsBase.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +327,7 @@
 				5B78E4160F5E941F004337D9 /* DateViewController.m in Sources */,
 				5BC54C100F5F2692003CFBE9 /* SelectionListViewController.m in Sources */,
 				5BC54DFA0F5F4638003CFBE9 /* Currency.m in Sources */,
+				5BBF01070F65CDC4002CAB3A /* CalculationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

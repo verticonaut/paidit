@@ -24,7 +24,7 @@
 	IBOutlet UINavigationController *navController;
 	IBOutlet PaymentsViewController *paymentsController;
 	IBOutlet PaymentDetailController *paymentDetailController;
-	
+	IBOutlet UITabBarController *paymentsBaseController;
 }
 
 @property (nonatomic, retain) NSMutableArray *allEvents;
@@ -33,6 +33,7 @@
 @property (nonatomic, retain) IBOutlet EventsViewController *eventsController;
 @property (nonatomic, retain) IBOutlet PaymentsViewController *paymentsController;
 @property (nonatomic, retain) IBOutlet PaymentDetailController *paymentDetailController;
+@property (nonatomic, retain) IBOutlet UITabBarController *paymentsBaseController;
 @property (nonatomic, retain) Event *currentEvent;
 
 -(void)eventClicked:(NSString *)eventName;

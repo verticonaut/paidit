@@ -49,5 +49,14 @@
 	[super dealloc];
 }
 
+- (BOOL)isValid {
+	return
+		nil != self.person
+	&&  nil != self.paymentType
+	&&	nil != self.amount
+	&&  self.amount.doubleValue > 0.0
+	&&  nil != self.date
+	&&  nil != self.currency;
+}
 
 @end

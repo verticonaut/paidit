@@ -19,6 +19,7 @@
 
 @synthesize payment;
 @synthesize delegate;
+@synthesize textFieldBeingEdited;
 
 - (Event*)getCurrentEvent {
 	PaidItAppDelegate *paidItAppDelegate;
@@ -28,6 +29,20 @@
 
 - (IBAction)save:(id)sender {
 	NSLog(@"save payment detail clicked");
+	if (nil != textFieldBeingEdited) {
+		payment.amount = [NSDecimalNumber decimalNumberWithString: textFieldBeingEdited.text];
+	}
+	if (!payment.isValid) {
+		UIAlertView *alert = [[UIAlertView alloc]
+							  initWithTitle: @"Invalid payment"
+							  message:@"Fields can not be empty and amount needs to be a positive number."
+							  delegate: self
+							  cancelButtonTitle: @"Ok"
+							  otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+		return;
+	}
 	[delegate paymentSaved: payment];
 	[self dismissModalViewControllerAnimated: TRUE];
 }
@@ -136,6 +151,8 @@
 
 - (void)dealloc {
 	[payment release];
+	[textFieldBeingEdited release];
+	
     [super dealloc];
 }
 
@@ -255,12 +272,23 @@
 
 #pragma mark -
 #pragma mark Text Field Delegate Methods
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    self.textFieldBeingEdited = textField;
+}
+
+
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    payment.amount = [NSDecimalNumber decimalNumberWithString: textField.text];
+	NSLog(@"number: %@", textField.text);
+	
+	// TODO do some number validation here
+	payment.amount = [NSDecimalNumber decimalNumberWithString: textField.text];
+	textFieldBeingEdited = nil;
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)tf {
+	NSLog(@"number: %@", tf.text);
 	[tf resignFirstResponder];
 	return YES;
 }

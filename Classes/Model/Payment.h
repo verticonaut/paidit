@@ -26,5 +26,6 @@
 @property (readwrite, assign) Currency* currency;
 
 - (NSString*)desc;
+- (BOOL)isValid;
 
 @end
